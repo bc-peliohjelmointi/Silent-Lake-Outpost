@@ -1,0 +1,3467 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1468142534008985541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499930051289441125}
+  - component: {fileID: 8362070091342084682}
+  m_Layer: 0
+  m_Name: Area Light (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499930051289441125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468142534008985541}
+  m_LocalRotation: {x: 0.0000003371748, y: 0.70710677, z: 0.00000033717475, w: 0.7071068}
+  m_LocalPosition: {x: -3.096, y: 17.117, z: -0.035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6475142751851558791}
+  m_RootOrder: 49
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!108 &8362070091342084682
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468142534008985541}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 3
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 5.608392, y: 1.4705544}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &1666401103104901692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6113295290538952715}
+  - component: {fileID: 4712352837154421506}
+  m_Layer: 0
+  m_Name: Area Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6113295290538952715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666401103104901692}
+  m_LocalRotation: {x: 0.0000004768371, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.129, y: 17.065, z: -3.013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6475142751851558791}
+  m_RootOrder: 47
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &4712352837154421506
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666401103104901692}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 3
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 5.608392, y: 1.4705544}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &2555511970944443097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1958290434608404803}
+  - component: {fileID: 4794549295405726604}
+  m_Layer: 0
+  m_Name: Area Light (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1958290434608404803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555511970944443097}
+  m_LocalRotation: {x: 4.2530205e-14, y: 1, z: 0.00000047683716, w: 0.000000104308114}
+  m_LocalPosition: {x: 1.014, y: 17.117, z: 2.904}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6475142751851558791}
+  m_RootOrder: 50
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!108 &4794549295405726604
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555511970944443097}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 3
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 3.2524643, y: 1.5153389}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &3297257719602818533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6475142751851558791}
+  m_Layer: 0
+  m_Name: LookoutTower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6475142751851558791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297257719602818533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3741144460395087424}
+  - {fileID: 4412893271782310358}
+  - {fileID: 1119964156110155233}
+  - {fileID: 4319069683871229168}
+  - {fileID: 2210401789518005691}
+  - {fileID: 7384817063723709511}
+  - {fileID: 8266067021217745505}
+  - {fileID: 3701163011398888766}
+  - {fileID: 5689448352917824871}
+  - {fileID: 7784422945701303159}
+  - {fileID: 4598491336585064633}
+  - {fileID: 6119230118119514022}
+  - {fileID: 1945678590460183751}
+  - {fileID: 4041334236411790496}
+  - {fileID: 6778443291986783945}
+  - {fileID: 997604898622234873}
+  - {fileID: 5033492923244876499}
+  - {fileID: 6069303797467045067}
+  - {fileID: 2141770814803076451}
+  - {fileID: 7249292397968667491}
+  - {fileID: 7278278923354200984}
+  - {fileID: 7360784063427622319}
+  - {fileID: 2108844309122474154}
+  - {fileID: 3947264965467346064}
+  - {fileID: 1545357123607744401}
+  - {fileID: 8427170763627068555}
+  - {fileID: 3076721038514540227}
+  - {fileID: 7952792926163642843}
+  - {fileID: 6514335402193296762}
+  - {fileID: 1668368178066828826}
+  - {fileID: 1966061406195222146}
+  - {fileID: 4129272557295462304}
+  - {fileID: 3955157260151744276}
+  - {fileID: 6207526953911581074}
+  - {fileID: 4209325950536971651}
+  - {fileID: 3329880618637055529}
+  - {fileID: 7570823025185598928}
+  - {fileID: 5959595385941402232}
+  - {fileID: 8334838217000988819}
+  - {fileID: 1902595533977729586}
+  - {fileID: 6764228324849234880}
+  - {fileID: 3349694168371996648}
+  - {fileID: 6839987617678330241}
+  - {fileID: 7822594942401606383}
+  - {fileID: 8975702274978152428}
+  - {fileID: 5141272099255241619}
+  - {fileID: 5829226180511957433}
+  - {fileID: 6113295290538952715}
+  - {fileID: 5007727321987418492}
+  - {fileID: 499930051289441125}
+  - {fileID: 1958290434608404803}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4254363765654920828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5007727321987418492}
+  - component: {fileID: 8123292179162865447}
+  m_Layer: 0
+  m_Name: Area Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5007727321987418492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4254363765654920828}
+  m_LocalRotation: {x: 0.00000033717478, y: -0.70710677, z: -0.00000033717475, w: 0.7071068}
+  m_LocalPosition: {x: 2.834, y: 17.065, z: -0.035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6475142751851558791}
+  m_RootOrder: 48
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!108 &8123292179162865447
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4254363765654920828}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 3
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 5.608392, y: 1.4705544}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1001 &997604898309255188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_23_39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5997164
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.38266
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0737028
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &997604898622234873 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 997604898309255188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1119964156467182913
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327903, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_03_10_26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3877947
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.04895
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0772772
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70643306
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.030843664
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70643455
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03084395
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011202872081650398514, type: 3}
+--- !u!4 &1119964156110155233 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327904, guid: abc00000000011202872081650398514,
+    type: 3}
+  m_PrefabInstance: {fileID: 1119964156467182913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1545357124597096316
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_32_48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42668366
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1537461
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &1545357123607744401 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 1545357124597096316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1668368179090816927
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031328132, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_LookoutTower_A4_37_53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.116743684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.236816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052862592
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328133, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328137, guid: abc00000000002606934750780155325, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: abc00000000012446778540267203764, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002606934750780155325, type: 3}
+--- !u!4 &1668368178066828826 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031328133, guid: abc00000000002606934750780155325,
+    type: 3}
+  m_PrefabInstance: {fileID: 1668368179090816927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1902595534691265195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327896, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_02_0_16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9673517
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.046387
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8237535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9991327
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000018067655
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000053644175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.041639958
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000010527356690479102971, type: 3}
+--- !u!4 &1902595533977729586 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327897, guid: abc00000000010527356690479102971,
+    type: 3}
+  m_PrefabInstance: {fileID: 1902595534691265195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1945678591040590890
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_20_36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7870011
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.381622
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0561163
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &1945678590460183751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 1945678591040590890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1966061405872838255
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_38_54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48906732
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.144423
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &1966061406195222146 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 1966061405872838255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2108844309303373895
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_30_46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0588493
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1379354
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &2108844309122474154 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 2108844309303373895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2141770814890587534
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_26_42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9473526
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.52086043
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000013709068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &2141770814803076451 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 2141770814890587534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2210401789438793046
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_12_28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2218878
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.877256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000008344649
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &2210401789518005691 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 2210401789438793046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3076721037494820398
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_34_50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9258858
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.153696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &3076721038514540227 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 3076721037494820398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3329880617778743193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031328175, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Bake_Pipe_Out_01_43_59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.167501
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.167501
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5492043
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.64383
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7681375
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70710653
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071071
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328176, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328180, guid: abc00000000001594856604409255802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: abc00000000009754348144838215575, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000001594856604409255802, type: 3}
+--- !u!4 &3329880618637055529 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031328176, guid: abc00000000001594856604409255802,
+    type: 3}
+  m_PrefabInstance: {fileID: 3329880617778743193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3349694169269040975
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327910, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_01_2_18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.91964793
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.052216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1575344
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70643383
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.030843943
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7064337
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.030843653
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000001531069442751476976, type: 3}
+--- !u!4 &3349694168371996648 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327911, guid: abc00000000001531069442751476976,
+    type: 3}
+  m_PrefabInstance: {fileID: 3349694169269040975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3701163010677947859
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_15_31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.221874
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6036117
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000008344649
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &3701163011398888766 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 3701163010677947859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3741144459639641817
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327896, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_02_8_24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2413356
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.049622
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.6032137
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0000024437904
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.043619543
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99904823
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000003091991
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000010527356690479102971, type: 3}
+--- !u!4 &3741144460395087424 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327897, guid: abc00000000010527356690479102971,
+    type: 3}
+  m_PrefabInstance: {fileID: 3741144459639641817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3947264965793956989
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_31_47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7756906
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1447945
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &3947264965467346064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 3947264965793956989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3955157260105037455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031328154, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_LookoutTower_A2_40_56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.116743684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.236816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052862592
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328155, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328159, guid: abc00000000009454619576751709363, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: abc00000000012446778540267203764, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000009454619576751709363, type: 3}
+--- !u!4 &3955157260151744276 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031328155, guid: abc00000000009454619576751709363,
+    type: 3}
+  m_PrefabInstance: {fileID: 3955157260105037455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4041334235515835469
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_21_37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.69553196
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0738425
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &4041334236411790496 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 4041334235515835469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4129272557644133938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031328145, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_LookoutTower_A3_39_55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.116743684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.236816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052862592
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328146, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328152, guid: abc00000000015302239948578566954, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: abc00000000012446778540267203764, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000015302239948578566954, type: 3}
+--- !u!4 &4129272557295462304 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031328146, guid: abc00000000015302239948578566954,
+    type: 3}
+  m_PrefabInstance: {fileID: 4129272557644133938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4209325950190363690
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031328168, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_FrontDoor_A_42_58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8015364
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.78891
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.920247
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9995739
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.029192835
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328169, guid: abc00000000002627623558699524978, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002627623558699524978, type: 3}
+--- !u!4 &4209325950536971651 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031328169, guid: abc00000000002627623558699524978,
+    type: 3}
+  m_PrefabInstance: {fileID: 4209325950190363690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4319069682980451415
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327910, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_01_11_27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.65505147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.049011
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0816767
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70643306
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.030842286
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70643455
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.030844275
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000001531069442751476976, type: 3}
+--- !u!4 &4319069683871229168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327911, guid: abc00000000001531069442751476976,
+    type: 3}
+  m_PrefabInstance: {fileID: 4319069682980451415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4412893271998796150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327903, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_03_9_25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.2864954
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.04895
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.074696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70643306
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.030843664
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70643455
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03084395
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011202872081650398514, type: 3}
+--- !u!4 &4412893271782310358 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327904, guid: abc00000000011202872081650398514,
+    type: 3}
+  m_PrefabInstance: {fileID: 4412893271998796150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4598491335692247124
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_18_34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8869655
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.381622
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0561562
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &4598491336585064633 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 4598491335692247124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5033492923020001854
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_24_40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9474258
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.963119
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000013709068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &5033492923244876499 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 5033492923020001854}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5141272099708771123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327903, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_03_6_22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2383065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.049377
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4830248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0000024437904
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.043619543
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99904823
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000003091991
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011202872081650398514, type: 3}
+--- !u!4 &5141272099255241619 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327904, guid: abc00000000011202872081650398514,
+    type: 3}
+  m_PrefabInstance: {fileID: 5141272099708771123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5689448353644017034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_16_32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2218943
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6607146
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000008344649
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &5689448352917824871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 5689448353644017034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5829226180593209715
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327945, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_LookoutTower_A_7_23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327946, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327950, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327950, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: abc00000000015311071465848490488, type: 2}
+    - target: {fileID: 1031327950, guid: abc00000000001958716210578380267, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: abc00000000012446778540267203764, type: 2}
+    - target: {fileID: 3663178728555224968, guid: abc00000000001958716210578380267,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 847685684389277933, guid: 510ba2802565ca1409a84caab33f5fa6,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000001958716210578380267, type: 3}
+--- !u!4 &5829226180511957433 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327946, guid: abc00000000001958716210578380267,
+    type: 3}
+  m_PrefabInstance: {fileID: 5829226180593209715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5959595385896725613
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031163412, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_Name
+      value: SM_Generator_A_172
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3613487
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.0152664
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.74183655
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.67058086
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163413, guid: abc00000000006653205480265269676, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006653205480265269676, type: 3}
+--- !u!4 &5959595385941402232 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031163413, guid: abc00000000006653205480265269676,
+    type: 3}
+  m_PrefabInstance: {fileID: 5959595385896725613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6069303796839418918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_25_41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9474092
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.8693354
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000013709068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &6069303797467045067 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 6069303796839418918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6119230118567759691
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_19_35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0266192
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.381622
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0561292
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &6119230118119514022 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 6119230118567759691}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6207526953431803952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031328161, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_LookoutTower_A1_41_57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328162, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328166, guid: abc00000000011632335123424662504, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: abc00000000012446778540267203764, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011632335123424662504, type: 3}
+--- !u!4 &6207526953911581074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031328162, guid: abc00000000011632335123424662504,
+    type: 3}
+  m_PrefabInstance: {fileID: 6207526953431803952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6514335401833090052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031328125, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_LookoutTower_A5_36_52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.116743684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.236816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052862592
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328126, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031328130, guid: abc00000000000074189578781430292, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: abc00000000012446778540267203764, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000000074189578781430292, type: 3}
+--- !u!4 &6514335402193296762 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031328126, guid: abc00000000000074189578781430292,
+    type: 3}
+  m_PrefabInstance: {fileID: 6514335401833090052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6764228324261552992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327903, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_03_1_17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9701233
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.047699
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.569151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.9992193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0000005327165
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000020861624
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03950807
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011202872081650398514, type: 3}
+--- !u!4 &6764228324849234880 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327904, guid: abc00000000011202872081650398514,
+    type: 3}
+  m_PrefabInstance: {fileID: 6764228324261552992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6778443291776564846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327910, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_01_22_38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9646173
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.047455
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.5291938
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9993299
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000022910532
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000017881392
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0366013
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000001531069442751476976, type: 3}
+--- !u!4 &6778443291986783945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327911, guid: abc00000000001531069442751476976,
+    type: 3}
+  m_PrefabInstance: {fileID: 6778443291776564846}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6839987617861294369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327903, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_03_3_19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.6681588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.050323
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1592734
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70643383
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.030843943
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7064337
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327904, guid: abc00000000011202872081650398514, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.030843653
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011202872081650398514, type: 3}
+--- !u!4 &6839987617678330241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327904, guid: abc00000000011202872081650398514,
+    type: 3}
+  m_PrefabInstance: {fileID: 6839987617861294369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7249292398552179598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_27_43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9473648
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.58314943
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000013709068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &7249292397968667491 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 7249292398552179598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7278278923035970421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_28_44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.947414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.833292
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000013709068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &7278278923354200984 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 7278278923035970421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7360784064175760706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_29_45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9474745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7670178
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000013709068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &7360784063427622319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 7360784064175760706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7384817062994404522
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_13_29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2219362
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7510866
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000008344649
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &7384817063723709511 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 7384817062994404522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7570823024572256529
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1030978752, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_Name
+      value: SM_Rope_B2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.094742
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.0980935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0030174553
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978753, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030978758, guid: abc00000000006219877508612448545, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: abc00000000014329426666001386616, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006219877508612448545, type: 3}
+--- !u!4 &7570823025185598928 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030978753, guid: abc00000000006219877508612448545,
+    type: 3}
+  m_PrefabInstance: {fileID: 7570823024572256529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7784422945343259546
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_17_33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2219234
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.9567273
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000008344649
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &7784422945701303159 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 7784422945343259546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7822594941517144694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327896, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_02_4_20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4256608
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.052216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.157541
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70643383
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.030843943
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7064337
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327897, guid: abc00000000010527356690479102971, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.030843653
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000010527356690479102971, type: 3}
+--- !u!4 &7822594942401606383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327897, guid: abc00000000010527356690479102971,
+    type: 3}
+  m_PrefabInstance: {fileID: 7822594941517144694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7952792926382324022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_35_51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8613294
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.383911
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1372728
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &7952792926163642843 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 7952792926382324022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8266067021938662028
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_14_30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2218454
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6926736
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000008344649
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &8266067021217745505 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 8266067021938662028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8334838217488989839
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031163419, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_Name
+      value: SM_Wire_A_173
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0377711
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5086975
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.550759
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.14799571
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.98898804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163420, guid: abc00000000001355639474642264314, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000001355639474642264314, type: 3}
+--- !u!4 &8334838217000988819 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031163420, guid: abc00000000001355639474642264314,
+    type: 3}
+  m_PrefabInstance: {fileID: 8334838217488989839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8427170764086881382
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327980, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Plank_01_33_49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6530132
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.385193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0638502
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327981, guid: abc00000000011783931293711928707, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011783931293711928707, type: 3}
+--- !u!4 &8427170763627068555 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327981, guid: abc00000000011783931293711928707,
+    type: 3}
+  m_PrefabInstance: {fileID: 8427170764086881382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8975702274492084043
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6475142751851558791}
+    m_Modifications:
+    - target: {fileID: 1031327910, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_Name
+      value: BP_LookoutTower_C_1_SM_Sunblind_01_5_21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.241177
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.04889
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.74968326
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0000024437904
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.043619543
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99904823
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031327911, guid: abc00000000001531069442751476976, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000003091991
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000001531069442751476976, type: 3}
+--- !u!4 &8975702274978152428 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031327911, guid: abc00000000001531069442751476976,
+    type: 3}
+  m_PrefabInstance: {fileID: 8975702274492084043}
+  m_PrefabAsset: {fileID: 0}
