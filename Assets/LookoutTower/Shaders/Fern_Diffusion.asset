@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Fern_Diffusion
   m_EditorClassIdentifier: 
   profile:
-    scatteringDistance: {r: 0.8962264, g: 0.6219512, b: 0.46925062, a: 1}
+    scatteringDistance: {r: 0.7490196, g: 0.51979464, b: 0.39217538, a: 1}
+    scatteringDistanceMultiplier: 1.1965326
     transmissionTint: {r: 1, g: 0.7193396, b: 0.5990566, a: 1}
     texturingMode: 1
     transmissionMode: 1
     thicknessRemap: {x: 0, y: 7.9418373}
     worldScale: 1
     ior: 1.5
-    hash: 1074481052
-  m_Version: 1
+    hash: 1076204788
+  m_Version: 2
