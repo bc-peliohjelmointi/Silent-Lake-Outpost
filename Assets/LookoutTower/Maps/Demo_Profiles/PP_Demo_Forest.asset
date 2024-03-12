@@ -292,6 +292,7 @@ MonoBehaviour:
   m_Name: HDShadowSettings
   m_EditorClassIdentifier: 
   active: 1
+  interCascadeBorders: 1
   maxShadowDistance:
     m_OverrideState: 1
     m_Value: 600
@@ -338,6 +339,9 @@ MonoBehaviour:
   mode:
     m_OverrideState: 1
     m_Value: 2
+  useFullACES:
+    m_OverrideState: 0
+    m_Value: 0
   toeStrength:
     m_OverrideState: 1
     m_Value: 0.338
@@ -362,6 +366,33 @@ MonoBehaviour:
   lutContribution:
     m_OverrideState: 0
     m_Value: 1
+  neutralHDRRangeReductionMode:
+    m_OverrideState: 0
+    m_Value: 2
+  acesPreset:
+    m_OverrideState: 0
+    m_Value: 3
+  fallbackMode:
+    m_OverrideState: 0
+    m_Value: 1
+  hueShiftAmount:
+    m_OverrideState: 0
+    m_Value: 0
+  detectPaperWhite:
+    m_OverrideState: 0
+    m_Value: 0
+  paperWhite:
+    m_OverrideState: 0
+    m_Value: 300
+  detectBrightnessLimits:
+    m_OverrideState: 0
+    m_Value: 1
+  minNits:
+    m_OverrideState: 0
+    m_Value: 0.005
+  maxNits:
+    m_OverrideState: 0
+    m_Value: 1000
 --- !u!114 &-2179163366805295870
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -543,6 +574,18 @@ MonoBehaviour:
   samplingNoise:
     m_OverrideState: 1
     m_Value: 0.197
+  animateSamplingNoise:
+    m_OverrideState: 0
+    m_Value: 1
+  leakReductionMode:
+    m_OverrideState: 0
+    m_Value: 1
+  minValidDotProductValue:
+    m_OverrideState: 0
+    m_Value: 0.1
+  occlusionOnlyReflectionNormalization:
+    m_OverrideState: 0
+    m_Value: 1
 --- !u!114 &2090634887689903648
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -798,9 +841,6 @@ MonoBehaviour:
   aerosolAnisotropy:
     m_OverrideState: 1
     m_Value: 1
-  numberOfBounces:
-    m_OverrideState: 0
-    m_Value: 10
   groundTint:
     m_OverrideState: 0
     m_Value: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
@@ -939,10 +979,10 @@ MonoBehaviour:
     m_Value: 0
   limitMin:
     m_OverrideState: 1
-    m_Value: -1.5846994
+    m_Value: 15
   limitMax:
     m_OverrideState: 1
-    m_Value: 14.590164
+    m_Value: 15
   curveMap:
     m_OverrideState: 0
     m_Value:
@@ -1088,12 +1128,12 @@ MonoBehaviour:
   cloudOffset:
     m_OverrideState: 0
     m_Value: {x: 0, y: 0}
-  lowestCloudAltitude:
-    m_OverrideState: 0
-    m_Value: 67.9
-  cloudThickness:
-    m_OverrideState: 0
-    m_Value: 100
+  bottomAltitude:
+    m_OverrideState: 1
+    m_Value: 1200
+  altitudeRange:
+    m_OverrideState: 1
+    m_Value: 2000
   fadeInMode:
     m_OverrideState: 0
     m_Value: 0
@@ -1120,7 +1160,7 @@ MonoBehaviour:
   cloudControl:
     m_OverrideState: 1
     m_Value: 0
-  cloudPreset:
+  m_CloudPreset:
     m_OverrideState: 1
     m_Value: 1
   cumulusMap:
@@ -1151,8 +1191,8 @@ MonoBehaviour:
   cloudMapResolution:
     m_OverrideState: 0
     m_Value: 64
-  customDensityCurve:
-    m_OverrideState: 0
+  densityCurve:
+    m_OverrideState: 1
     m_Value:
       serializedVersion: 2
       m_Curve:
@@ -1166,25 +1206,7 @@ MonoBehaviour:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.2
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.5
-        value: 0.7
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.8
+        time: 0.15
         value: 1
         inSlope: 0
         outSlope: 0
@@ -1194,7 +1216,7 @@ MonoBehaviour:
         outWeight: 0
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 0.1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1204,32 +1226,23 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  customErosionCurve:
-    m_OverrideState: 0
+  erosionCurve:
+    m_OverrideState: 1
     m_Value:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.1
         value: 0.9
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.2
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.8
-        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1238,7 +1251,7 @@ MonoBehaviour:
         outWeight: 0
       - serializedVersion: 3
         time: 1
-        value: 0.9
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1248,14 +1261,14 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  customAmbientOcclusionCurve:
-    m_OverrideState: 0
+  ambientOcclusionCurve:
+    m_OverrideState: 1
     m_Value:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1263,8 +1276,8 @@ MonoBehaviour:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0
-        value: 0
+        time: 0.25
+        value: 0.4
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1305,13 +1318,13 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {x: 0, y: 0, z: 0}
   erosionFactor:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.618
   erosionScale:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 50
   erosionNoiseType:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   ambientLightProbeDimmer:
     m_OverrideState: 1
