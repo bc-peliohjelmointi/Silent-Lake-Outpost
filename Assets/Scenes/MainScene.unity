@@ -2422,6 +2422,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1031162300, guid: abc00000000013662214612613783091, type: 3}
+      propertyPath: m_Size.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1031162301, guid: abc00000000013662214612613783091, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -5408,6 +5412,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030972453, guid: abc00000000015608724552591415605, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972454, guid: abc00000000015608724552591415605, type: 3}
+      propertyPath: m_Size.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1030972455, guid: abc00000000015608724552591415605, type: 3}
@@ -9918,7 +9926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: eaa658028c264034ca7e35966759fd77, type: 2}
-  m_StaticLightingSkyUniqueID: 1
+  m_StaticLightingSkyUniqueID: 0
   m_StaticLightingCloudsUniqueID: 0
   m_StaticLightingVolumetricClouds: 0
 --- !u!4 &277097780
@@ -12279,9 +12287,10 @@ GameObject:
   - component: {fileID: 324850105}
   - component: {fileID: 324850104}
   - component: {fileID: 324850103}
+  - component: {fileID: 324850110}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12454,6 +12463,20 @@ Transform:
   - {fileID: 640836038}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324850110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324850102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4192c6542658682499164338bd36ca5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sun: {fileID: 536198614}
+  Moon: {fileID: 472129853}
 --- !u!1001 &327404861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23399,6 +23422,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030972447, guid: abc00000000015094018443907734401, type: 3}
+      propertyPath: m_Size.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1030972448, guid: abc00000000015094018443907734401, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -27036,6 +27063,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030972453, guid: abc00000000015608724552591415605, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972454, guid: abc00000000015608724552591415605, type: 3}
+      propertyPath: m_Size.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1030972455, guid: abc00000000015608724552591415605, type: 3}
@@ -46459,6 +46490,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1031162300, guid: abc00000000013662214612613783091, type: 3}
+      propertyPath: m_Size.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1031162301, guid: abc00000000013662214612613783091, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -47351,13 +47386,25 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1031162817, guid: abc00000000008127486171277833908, type: 3}
+      propertyPath: m_Size.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1031162818, guid: abc00000000008127486171277833908, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1031162820, guid: abc00000000008127486171277833908, type: 3}
+      propertyPath: m_Size.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1031162821, guid: abc00000000008127486171277833908, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031162823, guid: abc00000000008127486171277833908, type: 3}
+      propertyPath: m_Size.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1031162824, guid: abc00000000008127486171277833908, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -69226,6 +69273,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1799174364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1805223644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805223647}
+  - component: {fileID: 1805223646}
+  m_Layer: 0
+  m_Name: dayCycleTrigger
+  m_TagString: DayCycleTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1805223646
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805223644}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3383017, y: 0.6153717, z: 0.4772673}
+  m_Center: {x: -0.43015966, y: -0.19231415, z: -0.020631151}
+--- !u!4 &1805223647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805223644}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.51877326, z: 0, w: 0.85491186}
+  m_LocalPosition: {x: 1360.69, y: 111.61, z: 1681.183}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -62.5, z: 0}
 --- !u!1001 &1805431861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76969,6 +77069,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1031163407, guid: abc00000000006764816076621770052, type: 3}
+      propertyPath: m_Size.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1031163408, guid: abc00000000006764816076621770052, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -79257,6 +79361,10 @@ PrefabInstance:
     - target: {fileID: 1031163630, guid: abc00000000009445415203441758602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031163632, guid: abc00000000009445415203441758602, type: 3}
+      propertyPath: m_Size.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1031163633, guid: abc00000000009445415203441758602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -83119,3 +83227,4 @@ SceneRoots:
   - {fileID: 1528600820}
   - {fileID: 135621341}
   - {fileID: 324850109}
+  - {fileID: 1805223647}
