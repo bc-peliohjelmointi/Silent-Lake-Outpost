@@ -197,24 +197,24 @@ namespace StarterAssets
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
 
-            // Check if there is movement input
+            
             if (_input.move == Vector2.zero)
             {
-                animator.SetFloat("Speed", 0); // No movement, set speed to 0
+                animator.SetFloat("Speed", 0); 
             }
-            // Check if player is moving forward (W key) and Left Shift key is pressed
+           
             else if (Input.GetKey(KeyCode.LeftShift) && _input.move.y > 0)
             {
-                animator.SetFloat("Speed", 1); // Running animation
+                animator.SetFloat("Speed", 1);
             }
-            // Check if player is moving backward (S key) and Left Shift key is pressed
+            
             else if (Input.GetKey(KeyCode.LeftShift) && _input.move.y < 0)
             {
-                animator.SetFloat("Speed", 0.5f); // Walking animation
+                animator.SetFloat("Speed", 0.5f); 
             }
             else
             {
-                animator.SetFloat("Speed", 0.5f); // Default walking animation
+                animator.SetFloat("Speed", 0.5f);
             }
 
 
