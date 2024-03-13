@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d6b342b8f0e9553468e8734d9bf5073d
+guid: 77d682f9116338e42bfdd48a9026eccf
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable:
@@ -483,7 +483,7 @@ ModelImporter:
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
-      mirror: 0
+      mirror: 1
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
