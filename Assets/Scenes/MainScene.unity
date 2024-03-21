@@ -25132,8 +25132,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 29.2707, y: 34.485573, z: 21.592787}
-  m_Center: {x: -7.3501077, y: -8.479649, z: -3.1357143}
+  m_Size: {x: 29.270771, y: 53.891033, z: 21.592787}
+  m_Center: {x: -7.3500724, y: -18.182379, z: -3.1356964}
 --- !u!1001 &483907565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51987,8 +51987,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 21.43146, y: 30.523048, z: 71.03533}
-  m_Center: {x: -88.96069, y: -17.37695, z: 63.521328}
+  m_Size: {x: 21.43146, y: 35.916092, z: 72.569725}
+  m_Center: {x: -88.96058, y: -20.073471, z: 64.28884}
 --- !u!1001 &1033391475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56182,7 +56182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1148185167}
   m_Layer: 0
-  m_Name: Cliffbarriers
+  m_Name: TowerCliffbarriers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56196,8 +56196,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148185166}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1414.6388, y: 153.48546, z: 1641.3896}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 122.408936, y: 14.952972, z: 47.621582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -56216,7 +56216,7 @@ Transform:
   - {fileID: 1170923326}
   - {fileID: 1218097140}
   - {fileID: 2126821341}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1748501042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1148313921
 PrefabInstance:
@@ -83629,6 +83629,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 58459569}
+  - {fileID: 1148185167}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1751011598
@@ -103970,4 +103971,3 @@ SceneRoots:
   - {fileID: 1397455680}
   - {fileID: 80306883}
   - {fileID: 1748501042}
-  - {fileID: 1148185167}
