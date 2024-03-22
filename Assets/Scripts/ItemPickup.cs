@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class PickUpItem : MonoBehaviour
 {
-    [SerializeField] LayerMask mask;
-    [SerializeField] GameObject pickUpUI;
-    [SerializeField] GameObject item;
+    [SerializeField] LayerMask mask1;
+    [SerializeField] LayerMask mask2;
 
     Camera cam;
 
-    [SerializeField] GameObject binocs;
-    [SerializeField] GameObject flashlight;
-    [SerializeField] GameObject flashlightUI;
-    [SerializeField] GameObject binocsUI;
-    [SerializeField] LayerMask mask2;
-    [SerializeField] LayerMask mask3;
-
+    [SerializeField] GameObject propBinocs;
+    [SerializeField] GameObject propFlashlight;
+    [SerializeField] GameObject pickupFlashUI;
+    [SerializeField] GameObject pickupBinocsUI;
     [SerializeField] GameObject binocInstructionUI;
     [SerializeField] GameObject flashlightInstructionUI;
+    [SerializeField] GameObject realFlashlight;
+    //[SerializeField] GameObject realBinocs;
+
+    //private bool hasSomethingInHand = false;
 
     private void Start()
     {
@@ -27,18 +27,16 @@ public class PickUpItem : MonoBehaviour
 
     private void Update()
     {
-        InteractWithObjects(mask, cam, pickUpUI, item);
-        InteractWithObjects(mask2, cam, binocsUI, binocs);
-        InteractWithObjects(mask3, cam, flashlightUI, flashlight);
+        InteractWithObjects(mask1, cam, pickupBinocsUI, propBinocs);
+        InteractWithObjects(mask2, cam, pickupFlashUI, propFlashlight);
     }
 
     private void InteractWithObjects(LayerMask mask, Camera cam, GameObject UI, GameObject item)
     {
-
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 4, mask))
+        if (Physics.Raycast(ray, out hit, 2, mask))
         {
             if (hit.collider.gameObject == item)
             {
@@ -53,19 +51,21 @@ public class PickUpItem : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Physics.Raycast(ray, out hit, 4, mask))
+            if (Physics.Raycast(ray, out hit, 2, mask))
             {
                 if (hit.collider.gameObject == item)
                 {
                     item.SetActive(false);
-                    if (item.name == "Binoculars")
+                    if (item.name == "PropBinocs")
                     {
                         binocInstructionUI.SetActive(true);
+                        //realBinocs.SetActive(true);
                     }
 
-                    else if (item.name == "Flashlight")
+                    else if (item.name == "PropFlashlight")
                     {
                         flashlightInstructionUI.SetActive(true);
+                        realFlashlight.SetActive(true);
                     }
                 }
             }

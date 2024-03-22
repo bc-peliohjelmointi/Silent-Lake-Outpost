@@ -5,19 +5,18 @@ using UnityEngine;
 
 public class ShowItem : MonoBehaviour
 {
+    //[SerializeField] GameObject propBinocs;
+    [SerializeField] GameObject propFlashlight;
+
     [SerializeField] GameObject flashLight;
     [SerializeField] Light flashLightSpotLight;
     [SerializeField] GameObject binocs;
-    [SerializeField] GameObject propBinocs;
-    [SerializeField] GameObject propFlashlight;
 
     [SerializeField] GameObject flashlightInstructionUI;
 
-    [SerializeField] AudioSource audioSource;
-    [SerializeField] AudioSource flashLightSource;
+    //[SerializeField] AudioSource flashLightSource;
 
-    [SerializeField] AudioClip flashLightClip;
-    [SerializeField] AudioClip photoClip;
+    //[SerializeField] AudioClip flashLightClip;
 
     private bool isLightActive = false;
     private bool toggleFlashLightLight = false;
@@ -34,14 +33,9 @@ public class ShowItem : MonoBehaviour
     {
         FlashLightOn();
         FlashLightShow();
-        BinocularsShow();
+        //BinocularsShow();
     }
 
-
-    private void DeactivateFlash()
-    {
-        isLightActive = false;
-    }
 
     void FlashLightOn()
     {
@@ -49,7 +43,7 @@ public class ShowItem : MonoBehaviour
         {
             flashLightSpotLight.enabled = true;
             toggleFlashLightLight = !toggleFlashLightLight;
-            flashLightSource.PlayOneShot(flashLightClip);
+            //flashLightSource.PlayOneShot(flashLightClip);
         }
 
         else if (toggleFlashLightLight)
@@ -82,6 +76,7 @@ public class ShowItem : MonoBehaviour
         }
     }
 
+    /*
     void BinocularsShow()
     {
         if (!propBinocs.activeSelf)
@@ -103,4 +98,5 @@ public class ShowItem : MonoBehaviour
             }
         }
     }
+    */
 }
