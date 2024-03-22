@@ -36,7 +36,7 @@ public class Binoculars : MonoBehaviour
             binocInstructionUI.SetActive(false);
             if (fov <= 10)
             {
-                taskScript.SpotAnimal();
+                //taskScript.SpotFire();
             }
         }
 

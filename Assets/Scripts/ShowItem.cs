@@ -32,7 +32,7 @@ public class ShowItem : MonoBehaviour
     private void Update()
     {
         FlashLightOn();
-        FlashLightShow();
+        //FlashLightShow();
         //BinocularsShow();
     }
 
@@ -44,6 +44,7 @@ public class ShowItem : MonoBehaviour
             flashLightSpotLight.enabled = true;
             toggleFlashLightLight = !toggleFlashLightLight;
             //flashLightSource.PlayOneShot(flashLightClip);
+            flashlightInstructionUI.SetActive(false);
         }
 
         else if (toggleFlashLightLight)
@@ -52,7 +53,7 @@ public class ShowItem : MonoBehaviour
         }
     }
 
-
+    /*
     void FlashLightShow()
     {
         if (!propFlashlight.activeSelf)
@@ -75,6 +76,7 @@ public class ShowItem : MonoBehaviour
             }
         }
     }
+    */
 
     /*
     void BinocularsShow()
