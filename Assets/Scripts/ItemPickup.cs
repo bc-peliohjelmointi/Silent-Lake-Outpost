@@ -16,7 +16,7 @@ public class PickUpItem : MonoBehaviour
     [SerializeField] GameObject binocInstructionUI;
     [SerializeField] GameObject flashlightInstructionUI;
     [SerializeField] GameObject realFlashlight;
-    //[SerializeField] GameObject realBinocs;
+    [SerializeField] GameObject realBinocs;
 
     //private bool hasSomethingInHand = false;
 
@@ -59,7 +59,7 @@ public class PickUpItem : MonoBehaviour
                     if (item.name == "PropBinocs")
                     {
                         binocInstructionUI.SetActive(true);
-                        //realBinocs.SetActive(true);
+                        realBinocs.SetActive(true);
                     }
 
                     else if (item.name == "PropFlashlight")

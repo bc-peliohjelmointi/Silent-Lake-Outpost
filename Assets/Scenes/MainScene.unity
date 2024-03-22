@@ -15334,6 +15334,7 @@ GameObject:
   - component: {fileID: 324850113}
   - component: {fileID: 324850114}
   - component: {fileID: 324850115}
+  - component: {fileID: 324850116}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -15657,6 +15658,7 @@ MonoBehaviour:
   binocInstructionUI: {fileID: 739022670}
   flashlightInstructionUI: {fileID: 1956980451}
   realFlashlight: {fileID: 903704783}
+  realBinocs: {fileID: 846603452}
 --- !u!114 &324850114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15694,6 +15696,28 @@ MonoBehaviour:
   maskGenerator:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &324850116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324850102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 762d1392be839cb499b67b807dcc4016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _virtualCamera: {fileID: 1658005370}
+  binoculars: {fileID: 846603452}
+  crosshair: {fileID: 1688785077}
+  binocInstructionUI: {fileID: 739022670}
+  minZoom: 2
+  maxZoom: 50
+  sensitivity: 15
+  fov: 0
+  isZoomed: 0
+  binocImage: {fileID: 2800000, guid: 21db10424c461104794267adbf1d8bc0, type: 3}
 --- !u!1001 &327404861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30215,6 +30239,7 @@ Transform:
   - {fileID: 226846470}
   - {fileID: 859184767}
   - {fileID: 903704784}
+  - {fileID: 846603454}
   m_Father: {fileID: 366323713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &586514789
@@ -42283,7 +42308,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 585200891}
     m_Modifications:
     - target: {fileID: 1031162329, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_Name
@@ -42299,7 +42324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031162329, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_RootOrder
@@ -42319,31 +42344,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1358.9578
+      value: 0.136
       objectReference: {fileID: 0}
     - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 111.4778
+      value: -0.124
       objectReference: {fileID: 0}
     - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1680.4613
+      value: -0.007
       objectReference: {fileID: 0}
     - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.893584
+      value: -0.49420726
       objectReference: {fileID: 0}
     - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.10194737
       objectReference: {fileID: 0}
     - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.448896
+      value: -0.7773224
       objectReference: {fileID: 0}
     - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.37568036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 43.221
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 108.336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031162330, guid: abc00000000008356948125937284632, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 343.018
       objectReference: {fileID: 0}
     - target: {fileID: 1031162332, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_Layer
@@ -42351,7 +42388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031162332, guid: abc00000000008356948125937284632, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42361,6 +42398,12 @@ PrefabInstance:
 --- !u!1 &846603452 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1031162329, guid: abc00000000008356948125937284632,
+    type: 3}
+  m_PrefabInstance: {fileID: 846603451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &846603454 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1031162330, guid: abc00000000008356948125937284632,
     type: 3}
   m_PrefabInstance: {fileID: 846603451}
   m_PrefabAsset: {fileID: 0}
@@ -81776,6 +81819,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 488d315dd231955448d1825ab53ddfce, type: 3}
+--- !u!114 &1658005370 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8762286023885395323, guid: 9c489a8547f4d9e4387da15a4ff82c81,
+    type: 3}
+  m_PrefabInstance: {fileID: 135621341}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1658013586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105489,5 +105544,4 @@ SceneRoots:
   - {fileID: 1397455680}
   - {fileID: 80306883}
   - {fileID: 1748501042}
-  - {fileID: 846603451}
   - {fileID: 74931836}
