@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ShowItem : MonoBehaviour
 {
-    //[SerializeField] GameObject propBinocs;
+    [SerializeField] GameObject propBinocs;
     [SerializeField] GameObject propFlashlight;
 
     [SerializeField] GameObject flashLight;
@@ -18,7 +18,6 @@ public class ShowItem : MonoBehaviour
 
     //[SerializeField] AudioClip flashLightClip;
 
-    private bool isLightActive = false;
     private bool toggleFlashLightLight = false;
 
     Binoculars binocScript;
@@ -32,8 +31,8 @@ public class ShowItem : MonoBehaviour
     private void Update()
     {
         FlashLightOn();
-        //FlashLightShow();
-        //BinocularsShow();
+        FlashLightShow();
+        BinocularsShow();
     }
 
 
@@ -53,7 +52,7 @@ public class ShowItem : MonoBehaviour
         }
     }
 
-    /*
+    
     void FlashLightShow()
     {
         if (!propFlashlight.activeSelf)
@@ -76,9 +75,9 @@ public class ShowItem : MonoBehaviour
             }
         }
     }
-    */
+    
 
-    /*
+    
     void BinocularsShow()
     {
         if (!propBinocs.activeSelf)
@@ -100,5 +99,5 @@ public class ShowItem : MonoBehaviour
             }
         }
     }
-    */
+    
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Tasks : MonoBehaviour
@@ -17,6 +15,9 @@ public class Tasks : MonoBehaviour
     //[SerializeField] GameObject camp;
     //[SerializeField] LayerMask mask;
     Camera cam;
+
+    private bool isTurnedOn = false;
+
 
     private void Start()
     {
@@ -53,7 +54,7 @@ public class Tasks : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 2, mask))
         {
-            if (hit.collider.gameObject == item)
+            if (hit.collider.gameObject == item && !isTurnedOn)
             {
                 UI.SetActive(true);
             }
@@ -73,6 +74,8 @@ public class Tasks : MonoBehaviour
                     ceilingLamp.SetActive(true);
                     deskLamp.SetActive(true);
                     selfDialogueUI.SetActive(false);
+                    isTurnedOn = true;
+                    generatorUI.SetActive(false);
                     // code here to turn on the generator sound 
                 }
             }

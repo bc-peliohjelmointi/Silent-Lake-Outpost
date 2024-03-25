@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - DayCycleTrigger
+  - GeneratorBarrier
   layers:
   - Default
   - TransparentFX
