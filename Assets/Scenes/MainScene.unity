@@ -4688,7 +4688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 80306883}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CannibalCamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5517,6 +5517,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 93777581}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &96761932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96761933}
+  - component: {fileID: 96761934}
+  m_Layer: 0
+  m_Name: Barrier1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &96761933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96761932}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.004909885, z: -0, w: 0.99998796}
+  m_LocalPosition: {x: -4.920044, y: -17.481003, z: 4.089966}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 891051281}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.563, z: 0}
+--- !u!65 &96761934
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96761932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25.794289, y: 3.1005554, z: 1}
+  m_Center: {x: 2.9971106, y: 1.0502777, z: -0.0000000019537452}
 --- !u!1001 &101098360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5745,6 +5798,140 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1144101699}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &104966531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 104966532}
+  - component: {fileID: 104966534}
+  - component: {fileID: 104966533}
+  m_Layer: 0
+  m_Name: StartingText 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &104966532
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104966531}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1847973855}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: -854.18}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &104966533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104966531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: If I can find my binoculars. I forgot where I left them.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4287621375
+  m_fontColor: {r: 1, g: 0.9117573, b: 0.5613208, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &104966534
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104966531}
+  m_CullTransparentMesh: 1
 --- !u!1001 &110977199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11497,8 +11684,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12138,6 +12325,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 252266789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &259438962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 259438963}
+  - component: {fileID: 259438964}
+  m_Layer: 0
+  m_Name: Barrier2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &259438963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259438962}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.21322325, z: -0, w: 0.9770035}
+  m_LocalPosition: {x: -13.91, y: -16.15, z: 3.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 891051281}
+  m_LocalEulerAnglesHint: {x: 0, y: 24.623, z: 0}
+--- !u!65 &259438964
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259438962}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 4.27812, z: 21.004622}
+  m_Center: {x: -0.000013456391, y: -1.6390395, z: -8.166269}
 --- !u!1 &260827074
 GameObject:
   m_ObjectHideFlags: 0
@@ -13434,10 +13674,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080488478}
     m_Modifications:
+    - target: {fileID: 8777975502124792004, guid: 25462e63d8888924a905b9717c12c34b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8777975502124792006, guid: 25462e63d8888924a905b9717c12c34b,
         type: 3}
       propertyPath: m_Name
       value: CAMP_fish_hanging_C
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777975502124792006, guid: 25462e63d8888924a905b9717c12c34b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8777975502124950758, guid: 25462e63d8888924a905b9717c12c34b,
         type: 3}
@@ -15551,8 +15801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 10
-  SprintSpeed: 18
+  MoveSpeed: 12
+  SprintSpeed: 22
   RotationSpeed: 1
   SpeedChangeRate: 10
   JumpHeight: 0
@@ -15827,6 +16077,16 @@ MonoBehaviour:
   maskGenerator:
     serializedVersion: 2
     m_Bits: 512
+  lookoutDialogueUI: {fileID: 1847973854}
+  areaBarriers:
+  - {fileID: 96761932}
+  - {fileID: 259438962}
+  - {fileID: 1527265464}
+  spotFire: {fileID: 359769370}
+  camp: {fileID: 909519207}
+  maskCamp:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &324850116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15841,7 +16101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _virtualCamera: {fileID: 1658005370}
   binoculars: {fileID: 846603452}
-  crosshair: {fileID: 1688785077}
+  UI: {fileID: 1287072512}
   binocInstructionUI: {fileID: 739022670}
   minZoom: 2
   maxZoom: 50
@@ -22597,6 +22857,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CAMP_firewood04
       objectReference: {fileID: 0}
+    - target: {fileID: 1014253628156399606, guid: 9c9aca2bc074a3c4e96314a8c539e120,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1014253628156695510, guid: 9c9aca2bc074a3c4e96314a8c539e120,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27250,7 +27515,7 @@ GameObject:
   - component: {fileID: 523305618}
   - component: {fileID: 523305620}
   - component: {fileID: 523305619}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44341,6 +44606,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 887353765}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &891051280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891051281}
+  m_Layer: 0
+  m_Name: NoLeavingTowerBarriers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891051281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891051280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1357.8705, y: 112.3792, z: 1689.2795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 96761933}
+  - {fileID: 259438963}
+  - {fileID: 1527265465}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &892470545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44353,6 +44652,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CAMP_shelter2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289971698361383805, guid: d60d32fdfa3ded747bf0c0ab3fc6fa8a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289971698361383807, guid: d60d32fdfa3ded747bf0c0ab3fc6fa8a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7289971698361476957, guid: d60d32fdfa3ded747bf0c0ab3fc6fa8a,
         type: 3}
@@ -44912,6 +45221,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1031163075, guid: abc00000000008716348917526022382,
     type: 3}
   m_PrefabInstance: {fileID: 904011778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &909519207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7289971698361383807, guid: d60d32fdfa3ded747bf0c0ab3fc6fa8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1447521719}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &911927754
 PrefabInstance:
@@ -47224,8 +47539,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44
-  m_fontSizeBase: 44
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -50837,10 +51152,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 80306883}
     m_Modifications:
+    - target: {fileID: 3490539332615456361, guid: b6adfd1d9e0a2274a8b1e6d3c3571255,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3490539332615456363, guid: b6adfd1d9e0a2274a8b1e6d3c3571255,
         type: 3}
       propertyPath: m_Name
       value: CAMP_dryingRack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490539332615456363, guid: b6adfd1d9e0a2274a8b1e6d3c3571255,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3490539332615625291, guid: b6adfd1d9e0a2274a8b1e6d3c3571255,
         type: 3}
@@ -52934,6 +53259,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CAMP_firewood06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980326020784753184, guid: f67c87a8446a641449ef11a20311f335,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8980326020784920064, guid: f67c87a8446a641449ef11a20311f335,
         type: 3}
@@ -55042,7 +55372,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: -350}
+  m_SizeDelta: {x: 200, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120999813
 MonoBehaviour:
@@ -55091,8 +55421,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44
-  m_fontSizeBase: 44
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -55379,10 +55709,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080488478}
     m_Modifications:
+    - target: {fileID: 290789869273238176, guid: bf46b7a15686edf43898b4bcd0f7240f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 290789869273238178, guid: bf46b7a15686edf43898b4bcd0f7240f,
         type: 3}
       propertyPath: m_Name
       value: CAMP_ham_hanging
+      objectReference: {fileID: 0}
+    - target: {fileID: 290789869273238178, guid: bf46b7a15686edf43898b4bcd0f7240f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 290789869273732738, guid: bf46b7a15686edf43898b4bcd0f7240f,
         type: 3}
@@ -55584,6 +55924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CAMP_firewood05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689104175557783818, guid: 975b648e87927a646ae2fe5db8b5c16c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63458,7 +63803,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: It's getting late now. I should do my final lookout before I go to sleep.
+  m_text: Now that the generator is on. I should probably do my final lookout before
+    I head to sleep.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -63485,8 +63831,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -67980,7 +68326,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: -350}
+  m_SizeDelta: {x: 200, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1374850805
 MonoBehaviour:
@@ -68029,8 +68375,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44
-  m_fontSizeBase: 44
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -68774,8 +69120,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -71804,6 +72150,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: CAMP_shelter2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7289971698361383805, guid: d60d32fdfa3ded747bf0c0ab3fc6fa8a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289971698361383807, guid: d60d32fdfa3ded747bf0c0ab3fc6fa8a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7289971698361476957, guid: d60d32fdfa3ded747bf0c0ab3fc6fa8a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -72147,10 +72503,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7010414375316839572, guid: bd9fd24019998fc41a587ede27ce0d99,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7010414375316839574, guid: bd9fd24019998fc41a587ede27ce0d99,
         type: 3}
       propertyPath: m_Name
       value: CAMP_firewood_stack
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010414375316839574, guid: bd9fd24019998fc41a587ede27ce0d99,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -75293,7 +75659,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: -0.000061035156}
-  m_SizeDelta: {x: 200, y: -350}
+  m_SizeDelta: {x: 200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1501911559
 MonoBehaviour:
@@ -75342,8 +75708,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44
-  m_fontSizeBase: 44
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -76668,6 +77034,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1526481549}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1527265464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1527265465}
+  - component: {fileID: 1527265466}
+  m_Layer: 0
+  m_Name: Barrier3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1527265465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527265464}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.25080097, z: -0, w: 0.9680387}
+  m_LocalPosition: {x: -22.809814, y: -15.342003, z: -11.481567}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 891051281}
+  m_LocalEulerAnglesHint: {x: 0, y: 29.05, z: 0}
+--- !u!65 &1527265466
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527265464}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 32.052788, y: 4.291458, z: 1}
+  m_Center: {x: 15.526344, y: -1.2391052, z: 0.000024373308}
 --- !u!1001 &1528600820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79885,7 +80304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Not again! I have to go tell them to put the fire out right now!
+  m_text: A Fire?  At this time of the night! I better go check it out.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -79912,8 +80331,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -81693,6 +82112,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CAMP_bench
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846026730419634105, guid: 488d315dd231955448d1825ab53ddfce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846026730419634107, guid: 488d315dd231955448d1825ab53ddfce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3846026730419921817, guid: 488d315dd231955448d1825ab53ddfce,
         type: 3}
@@ -85561,7 +85990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758658786}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CampFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87889,10 +88318,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 80306883}
     m_Modifications:
+    - target: {fileID: 5958620340737922128, guid: 2b3690ea4e69e6e44a98314830ab91b3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5958620340737922130, guid: 2b3690ea4e69e6e44a98314830ab91b3,
         type: 3}
       propertyPath: m_Name
       value: CAMP_strawBed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5958620340737922130, guid: 2b3690ea4e69e6e44a98314830ab91b3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5958620340738214002, guid: 2b3690ea4e69e6e44a98314830ab91b3,
         type: 3}
@@ -89406,6 +89845,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1286249351}
+  - {fileID: 104966532}
   m_Father: {fileID: 1427948988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -90177,8 +90617,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44
-  m_fontSizeBase: 44
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -92606,10 +93046,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080488478}
     m_Modifications:
+    - target: {fileID: 8852838416173298920, guid: 94c0599e776456349a02916e84b045a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8852838416173298922, guid: 94c0599e776456349a02916e84b045a0,
         type: 3}
       propertyPath: m_Name
       value: CAMP_fish_hanging_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852838416173298922, guid: 94c0599e776456349a02916e84b045a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8852838416173721802, guid: 94c0599e776456349a02916e84b045a0,
         type: 3}
@@ -92789,6 +93239,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080488478}
     m_Modifications:
+    - target: {fileID: 894377403143820326, guid: 7a634e858eeb580c782910b2172dff78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2584887517546691643, guid: 7a634e858eeb580c782910b2172dff78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -92843,6 +93298,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: leg2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924117281963665025, guid: 7a634e858eeb580c782910b2172dff78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147886525814710244, guid: 7a634e858eeb580c782910b2172dff78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547557927663997814, guid: 7a634e858eeb580c782910b2172dff78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189103502129009242, guid: 7a634e858eeb580c782910b2172dff78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -96243,7 +96718,7 @@ GameObject:
   - component: {fileID: 2005271969}
   - component: {fileID: 2005271968}
   - component: {fileID: 2005271970}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98570,7 +99045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2031341831
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99258,6 +99733,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CAMP_firewood06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980326020784753184, guid: f67c87a8446a641449ef11a20311f335,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8980326020784920064, guid: f67c87a8446a641449ef11a20311f335,
         type: 3}
@@ -100509,6 +100989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CAMP_firewood06 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980326020784753184, guid: f67c87a8446a641449ef11a20311f335,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8980326020784920064, guid: f67c87a8446a641449ef11a20311f335,
         type: 3}
@@ -104329,6 +104814,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: torso4
       objectReference: {fileID: 0}
+    - target: {fileID: 6342275481973864587, guid: 263e9d24b329c92d18b95c3192ed8ce1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -105479,3 +105969,4 @@ SceneRoots:
   - {fileID: 1748501042}
   - {fileID: 74931836}
   - {fileID: 2037812159}
+  - {fileID: 891051281}

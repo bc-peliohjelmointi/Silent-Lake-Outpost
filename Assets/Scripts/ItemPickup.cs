@@ -60,12 +60,16 @@ public class PickUpItem : MonoBehaviour
                     {
                         binocInstructionUI.SetActive(true);
                         realBinocs.SetActive(true);
+                        realFlashlight.SetActive(false);
+                        flashlightInstructionUI.SetActive(false);
                     }
 
                     else if (item.name == "PropFlashlight")
                     {
                         flashlightInstructionUI.SetActive(true);
                         realFlashlight.SetActive(true);
+                        realBinocs.SetActive(false);
+                        binocInstructionUI.SetActive(false);
                     }
                 }
             }

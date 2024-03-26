@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tasks : MonoBehaviour
 {
@@ -10,42 +11,58 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject generatorUI;
     [SerializeField] LayerMask maskGenerator;
 
+    [SerializeField] GameObject lookoutDialogueUI;
+    [SerializeField] GameObject[] areaBarriers;
+
     // variables for scouting out the campfire
-    //[SerializeField] GameObject taskBarrier;
-    //[SerializeField] GameObject camp;
-    //[SerializeField] LayerMask mask;
+    [SerializeField] GameObject spotFire;
+    [SerializeField] GameObject camp;
+    [SerializeField] LayerMask maskCamp;
+
     Camera cam;
 
     private bool isTurnedOn = false;
+    private bool canSpotFire = false;
 
 
     private void Start()
     {
         cam = Camera.main;
+        Invoke("TurnOffLights", 13f);
+        Invoke("DelayFirstDialogue", 14f);
     }
 
     private void Update()
     {
         TurnOnGenerator(maskGenerator, cam, generatorUI, generator);
     }
-    /*
+    
     public void SpotFire()
     {
-        if (taskBarrier.activeSelf)
+        if (canSpotFire)
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 10000, mask))
+            if (Physics.Raycast(ray, out hit, 10000, maskCamp))
             {
                 if (hit.collider.gameObject == camp)
                 {
-                    //taskBarrier.SetActive(false);
-                    //taskList.SetActive(false);
+                    foreach(GameObject barrier in areaBarriers)
+                    {
+                        barrier.SetActive(false);
+                    }
+                    lookoutDialogueUI.SetActive(false);
+                    spotFire.SetActive(true);
+                    Invoke("DisableSpotFireText", 15f);
                 }
             }
         }
     }
-    */
+    
+    private void DelayFirstDialogue()
+    {
+        selfDialogueUI.SetActive(true);
+    }
 
     private void TurnOnGenerator(LayerMask mask, Camera cam, GameObject UI, GameObject item)
     {
@@ -76,9 +93,27 @@ public class Tasks : MonoBehaviour
                     selfDialogueUI.SetActive(false);
                     isTurnedOn = true;
                     generatorUI.SetActive(false);
+                    Invoke("LookoutTaskDialogue", 30f);
                     // code here to turn on the generator sound 
                 }
             }
         }
+    }
+
+    private void LookoutTaskDialogue()
+    {
+        lookoutDialogueUI.SetActive(true);
+        canSpotFire = true;
+    }
+
+    private void DisableSpotFireText()
+    {
+        spotFire.SetActive(false);
+    }
+
+    private void TurnOffLights()
+    {
+        ceilingLamp.SetActive(false);
+        deskLamp.SetActive(false);
     }
 }

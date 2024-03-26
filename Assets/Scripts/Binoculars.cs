@@ -9,7 +9,7 @@ public class Binoculars : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera _virtualCamera;
 
     [SerializeField] GameObject binoculars;
-    [SerializeField] GameObject crosshair;
+    [SerializeField] GameObject UI;
     [SerializeField] GameObject binocInstructionUI;
     [SerializeField] float minZoom = 2f;
     [SerializeField] float maxZoom = 50f;
@@ -36,7 +36,7 @@ public class Binoculars : MonoBehaviour
             binocInstructionUI.SetActive(false);
             if (fov <= 10)
             {
-                //taskScript.SpotFire();
+                taskScript.SpotFire();
             }
         }
 
@@ -62,7 +62,7 @@ public class Binoculars : MonoBehaviour
         else if (!isZoomed)
         {
             isZoomed = false;
-            crosshair.SetActive(true);
+            UI.SetActive(true);
         }
     }
 
@@ -72,7 +72,7 @@ public class Binoculars : MonoBehaviour
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), binocImage);
             binoculars.SetActive(false);
-            crosshair.SetActive(false);
+            UI.SetActive(false);
         }
 
     }
