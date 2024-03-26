@@ -8251,7 +8251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Intensity: 20000
   m_EnableSpotReflector: 1
-  m_LuxAtDistance: 5
+  m_LuxAtDistance: 3.5
   m_InnerSpotPercent: 94
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
@@ -8371,7 +8371,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 500000
+  m_Intensity: 245000
   m_Range: 25
   m_SpotAngle: 75
   m_InnerSpotAngle: 1
@@ -25024,7 +25024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 18465.701
+  m_Intensity: 26000
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -25146,7 +25146,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 18465.701
+  m_Intensity: 26000
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -47633,7 +47633,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '[Mouse1] to Use
 
-    [F] to Equip/DeEquip '
+    [F] to Equip/Unequip '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -80596,7 +80596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A Fire?  At this time of the night! I better go check it out.
+  m_text: A Camp? No one should be camping here right now! I better go check it out.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -90882,7 +90882,7 @@ MonoBehaviour:
 
     [Scroll Wheel] to  Zoom
 
-    [B] to Equip/DeEquip'
+    [B] to Equip/Unequip'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
