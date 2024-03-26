@@ -93,7 +93,7 @@ public class Tasks : MonoBehaviour
                     selfDialogueUI.SetActive(false);
                     isTurnedOn = true;
                     generatorUI.SetActive(false);
-                    Invoke("LookoutTaskDialogue", 30f);
+                    Invoke("LookoutTaskDialogue", 20f);
                     // code here to turn on the generator sound 
                 }
             }

@@ -24,7 +24,6 @@ public class ShowItem : MonoBehaviour
 
     private void Start()
     {
-        flashLightSpotLight.enabled = false;
         binocScript = GetComponent<Binoculars>();
     }
 
@@ -43,10 +42,14 @@ public class ShowItem : MonoBehaviour
             flashLightSpotLight.enabled = true;
             toggleFlashLightLight = !toggleFlashLightLight;
             //flashLightSource.PlayOneShot(flashLightClip);
-            flashlightInstructionUI.SetActive(false);
         }
 
         else if (toggleFlashLightLight)
+        {
+            flashLightSpotLight.enabled = false;
+        }
+
+        else if (binocs.activeSelf || !flashLight.activeSelf)
         {
             flashLightSpotLight.enabled = false;
         }
