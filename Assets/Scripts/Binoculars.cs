@@ -39,7 +39,7 @@ public class Binoculars : MonoBehaviour
             if (fov <= 11 && hasSeenCamp == false)
             {
                 taskScript.SpotFire();
-                Invoke("SawCamp", 2f);
+                Invoke("SawCamp", 1f);
             }
         }
 

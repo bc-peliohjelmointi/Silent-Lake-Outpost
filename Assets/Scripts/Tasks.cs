@@ -53,7 +53,7 @@ public class Tasks : MonoBehaviour
                     }
                     lookoutDialogueUI.SetActive(false);
                     spotFire.SetActive(true);
-                    Invoke("DisableSpotFireText", 15f);
+                    Invoke("DisableSpotFireText", 25f);
                 }
             }
         }
@@ -93,7 +93,7 @@ public class Tasks : MonoBehaviour
                     selfDialogueUI.SetActive(false);
                     isTurnedOn = true;
                     generatorUI.SetActive(false);
-                    Invoke("LookoutTaskDialogue", 20f);
+                    Invoke("LookoutTaskDialogue", 5f);
                     // code here to turn on the generator sound 
                 }
             }
