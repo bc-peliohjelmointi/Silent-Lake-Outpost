@@ -10,7 +10,7 @@ public class DoorInteractable : MonoBehaviour
 
     Camera cam;
     bool isDoorOpening = false;
-    bool isDoorMoving = false; // Added flag to track if the door is currently moving
+    bool isDoorMoving = false; 
     float smoothTime = 4f;
 
     Quaternion targetRotation;
@@ -22,7 +22,7 @@ public class DoorInteractable : MonoBehaviour
 
     private void Update()
     {
-        if (!isDoorMoving) // Check if the door is not currently moving
+        if (!isDoorMoving)
         {
             OpenDoor(maskDoor, cam, doorUI, doorParent);
         }
@@ -33,7 +33,7 @@ public class DoorInteractable : MonoBehaviour
             {
                 doorParent.transform.rotation = targetRotation;
                 isDoorOpening = false;
-                isDoorMoving = false; // Reset the flag when the door movement is complete
+                isDoorMoving = false; 
             }
         }
     }
@@ -55,7 +55,7 @@ public class DoorInteractable : MonoBehaviour
             UI.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && !isDoorMoving) // Check if the door is not currently moving
+        if (Input.GetKeyDown(KeyCode.E) && !isDoorMoving) 
         {
             if (Physics.Raycast(ray, out hit, 2, mask))
             {
@@ -70,7 +70,7 @@ public class DoorInteractable : MonoBehaviour
                     DoorOpen.SetActive(true);
                 }
                 isDoorOpening = true;
-                isDoorMoving = true; // Set the flag indicating that the door is now moving
+                isDoorMoving = true; 
             }
         }
     }

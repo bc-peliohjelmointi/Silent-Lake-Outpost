@@ -10,31 +10,31 @@ public class CabinDoorInteractable : MonoBehaviour
 
     Camera cam;
     bool isDoorOpening = false;
-    bool isDoorMoving = false; // Added flag to track if the door is currently moving
+    bool isDoorMoving = false;
     float smoothTime = 4f;
 
-    Vector3 targetPosition; // Changed from Quaternion to Vector3 for position movement
+    Vector3 targetPosition; 
 
     private void Start()
     {
         cam = Camera.main;
-        targetPosition = CabinDoor.transform.position; // Initialize target position to current position
+        targetPosition = CabinDoor.transform.position;
     }
 
     private void Update()
     {
-        if (!isDoorMoving) // Check if the door is not currently moving
+        if (!isDoorMoving) 
         {
             OpenDoor(maskCabinDoor, cam, doorUI, CabinDoor);
         }
         if (isDoorOpening)
         {
-            CabinDoor.transform.position = Vector3.Lerp(CabinDoor.transform.position, targetPosition, smoothTime * Time.deltaTime); // Change rotation to position
-            if (Vector3.Distance(CabinDoor.transform.position, targetPosition) < 0.1f) // Change from Quaternion.Angle to Vector3.Distance for position
+            CabinDoor.transform.position = Vector3.Lerp(CabinDoor.transform.position, targetPosition, smoothTime * Time.deltaTime);
+            if (Vector3.Distance(CabinDoor.transform.position, targetPosition) < 0.1f)
             {
                 CabinDoor.transform.position = targetPosition;
                 isDoorOpening = false;
-                isDoorMoving = false; // Reset the flag when the door movement is complete
+                isDoorMoving = false; 
             }
         }
     }
@@ -56,22 +56,22 @@ public class CabinDoorInteractable : MonoBehaviour
             UI.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && !isDoorMoving) // Check if the door is not currently moving
+        if (Input.GetKeyDown(KeyCode.E) && !isDoorMoving) 
         {
             if (Physics.Raycast(ray, out hit, 2, mask))
             {
                 if (CabinDoorOpen.activeSelf)
                 {
-                    targetPosition = CabinDoor.transform.position + new Vector3(0, 0, 1); // Move z position by 1
+                    targetPosition = CabinDoor.transform.position + new Vector3(0, 0, 1); 
                     CabinDoorOpen.SetActive(false);
                 }
                 else
                 {
-                    targetPosition = CabinDoor.transform.position + new Vector3(0, 0, -1); // Move z position by -1
+                    targetPosition = CabinDoor.transform.position + new Vector3(0, 0, -1); 
                     CabinDoorOpen.SetActive(true);
                 }
                 isDoorOpening = true;
-                isDoorMoving = true; // Set the flag indicating that the door is now moving
+                isDoorMoving = true; 
             }
         }
     }
