@@ -18,7 +18,6 @@ public class ShowItem : MonoBehaviour
 
     //[SerializeField] AudioClip flashLightClip;
 
-    private bool toggleFlashLightLight = false;
 
     Binoculars binocScript;
 
@@ -37,22 +36,25 @@ public class ShowItem : MonoBehaviour
 
     void FlashLightOn()
     {
-        if (flashLight.activeSelf && Input.GetKeyDown(KeyCode.Mouse0))
+        if (flashLight.activeSelf && !flashLightSpotLight.enabled && Input.GetKeyDown(KeyCode.Mouse0))
         {
             flashLightSpotLight.enabled = true;
-            toggleFlashLightLight = !toggleFlashLightLight;
             //flashLightSource.PlayOneShot(flashLightClip);
+
         }
 
-        else if (toggleFlashLightLight)
-        {
+        else if(flashLightSpotLight.enabled && Input.GetKeyDown(KeyCode.Mouse0)) 
+        { 
             flashLightSpotLight.enabled = false;
         }
+
+        
 
         else if (binocs.activeSelf || !flashLight.activeSelf)
         {
             flashLightSpotLight.enabled = false;
         }
+        
     }
 
     

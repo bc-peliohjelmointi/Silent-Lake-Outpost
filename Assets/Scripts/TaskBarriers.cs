@@ -16,10 +16,13 @@ public class TaskBarriers : MonoBehaviour
     }
     private void OnTriggerEnter(Collider barrier)
     {
-        if (barrier.CompareTag("GeneratorBarrier"))
+        if(turnOnGeneratorUI.activeSelf)
         {
-            turnOnGeneratorUI.SetActive(false);
-            pickUpFlashlightUI.SetActive(true);
+            if (barrier.CompareTag("GeneratorBarrier"))
+            {
+                turnOnGeneratorUI.SetActive(false);
+                pickUpFlashlightUI.SetActive(true);
+            }
         }
     }
 
