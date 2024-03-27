@@ -62,12 +62,12 @@ public class CabinDoorInteractable : MonoBehaviour
             {
                 if (CabinDoorOpen.activeSelf)
                 {
-                    targetPosition = CabinDoor.transform.position + new Vector3(0, 0, 1); 
+                    targetPosition = CabinDoor.transform.position + new Vector3(0, 0, -1); 
                     CabinDoorOpen.SetActive(false);
                 }
                 else
                 {
-                    targetPosition = CabinDoor.transform.position + new Vector3(0, 0, -1); 
+                    targetPosition = CabinDoor.transform.position + new Vector3(0, 0, 1); 
                     CabinDoorOpen.SetActive(true);
                 }
                 isDoorOpening = true;

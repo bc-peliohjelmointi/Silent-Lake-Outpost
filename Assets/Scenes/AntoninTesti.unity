@@ -23103,7 +23103,7 @@ MonoBehaviour:
   doorUI: {fileID: 1256629590}
   maskCabinDoor:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 2048
   CabinDoorOpen: {fileID: 1631179251}
 --- !u!1001 &1646830827
 PrefabInstance:
@@ -23604,7 +23604,7 @@ PrefabInstance:
     - target: {fileID: 8089039256518232345, guid: 8f1a6a30210377340a8458b836ffdcb2,
         type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8089039256518232345, guid: 8f1a6a30210377340a8458b836ffdcb2,
         type: 3}
