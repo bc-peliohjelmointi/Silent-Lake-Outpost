@@ -1,37 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using StarterAssets;
 
 public class MouseLook : MonoBehaviour
 {
     public Slider slider;
-    public float mouseSensitivity = 100f;
     public Transform playerBody;
-    float xRotation = 0f;
+
+    private FirstPersonController firstPersonController;
+    private float mouseSensitivity;
 
     void Start()
     {
-        mouseSensitivity = PlayerPrefs.GetFloat("currentSensitivity", 1000);
-        slider.value = mouseSensitivity / 100;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    void Update()
-    {
-        PlayerPrefs.SetFloat("currentSensitivity", mouseSensitivity);
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        playerBody.Rotate(Vector3.up * mouseX);
+        firstPersonController = GetComponent<FirstPersonController>();
+        mouseSensitivity = PlayerPrefs.GetFloat("currentSensitivity", 100f);
+        slider.value = mouseSensitivity / 500f;
     }
 
     public void AdjustSpeed(float newSpeed)
     {
         mouseSensitivity = newSpeed * 500;
+        PlayerPrefs.SetFloat("currentSensitivity", mouseSensitivity);
+    }
+
+    // Add a method to enable/disable looking
+    public void SetLookingEnabled(bool enabled)
+    {
+        firstPersonController.enabled = enabled;
     }
 }

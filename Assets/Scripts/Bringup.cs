@@ -6,6 +6,13 @@ public class Bringup : MonoBehaviour
 {
     public GameObject setting;
     public bool issettingactive;
+    public MouseLook mouseLookScript; // Reference to the MouseLook script
+
+    void Start()
+    {
+        // Assign the MouseLook script reference
+        mouseLookScript = GetComponent<MouseLook>();
+    }
 
     void Update()
     {
@@ -15,7 +22,6 @@ public class Bringup : MonoBehaviour
             {
                 Pause();
             }
-
             else
             {
                 Resume();
@@ -27,15 +33,17 @@ public class Bringup : MonoBehaviour
     {
         setting.SetActive(true);
         issettingactive = true;
-        this.GetComponent<MouseLook>().enabled = false;
+        mouseLookScript.SetLookingEnabled(false); // Disable looking
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true; // Ensure cursor is visible when pause menu is active
     }
 
     public void Resume()
     {
         setting.SetActive(false);
         issettingactive = false;
-        this.GetComponent<MouseLook>().enabled = true;
+        mouseLookScript.SetLookingEnabled(true); // Enable looking
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false; // Ensure cursor is hidden when pause menu is inactive
     }
 }
