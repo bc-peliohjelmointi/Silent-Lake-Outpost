@@ -86,7 +86,7 @@ public class Binoculars : MonoBehaviour
 
     void OnGUI()
     {
-        if (isZoomed)
+        if (isZoomed && pauseScript.isPaused == false)
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), binocImage);
             binoculars.SetActive(false);
