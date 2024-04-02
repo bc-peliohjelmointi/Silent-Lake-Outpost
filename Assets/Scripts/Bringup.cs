@@ -8,6 +8,12 @@ public class Bringup : MonoBehaviour
     public bool issettingactive;
     public MouseLook mouseLookScript; // Reference to the MouseLook script
 
+    [SerializeField] GameObject flashLight;
+    [SerializeField] GameObject binoculars;
+
+    public bool isPaused = false;
+
+
     void Start()
     {
         // Assign the MouseLook script reference
@@ -36,6 +42,9 @@ public class Bringup : MonoBehaviour
         mouseLookScript.SetLookingEnabled(false); // Disable looking
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true; // Ensure cursor is visible when pause menu is active
+        flashLight.SetActive(false);
+        binoculars.SetActive(false);
+        isPaused = true;
     }
 
     public void Resume()
@@ -45,5 +54,6 @@ public class Bringup : MonoBehaviour
         mouseLookScript.SetLookingEnabled(true); // Enable looking
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false; // Ensure cursor is hidden when pause menu is inactive
+        isPaused = false;
     }
 }

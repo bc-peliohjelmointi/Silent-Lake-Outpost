@@ -21,10 +21,12 @@ public class Binoculars : MonoBehaviour
 
     [SerializeField] Texture2D binocImage;
     Tasks taskScript;
+    Bringup pauseScript;
 
     private void Start()
     {
         taskScript = GetComponent<Tasks>();
+        pauseScript = GetComponent<Bringup>();
         hasSeenCamp = false;
     }
 
@@ -70,7 +72,15 @@ public class Binoculars : MonoBehaviour
         else if (!isZoomed)
         {
             isZoomed = false;
-            UI.SetActive(true);
+            if(pauseScript.isPaused == false)
+            {
+                UI.SetActive(true);
+            }
+            
+            else
+            {
+                UI.SetActive(false);
+            }
         }
     }
 
