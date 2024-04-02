@@ -22,7 +22,6 @@ public class Tasks : MonoBehaviour
     Camera cam;
 
     private bool isTurnedOn = false;
-    private bool canSpotFire = false;
 
 
     private void Start()
@@ -36,29 +35,26 @@ public class Tasks : MonoBehaviour
     {
         TurnOnGenerator(maskGenerator, cam, generatorUI, generator);
     }
-    
+
     public void SpotFire()
     {
-        if (canSpotFire)
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 10000, maskCamp))
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 10000, maskCamp))
+            if (hit.collider.gameObject == camp)
             {
-                if (hit.collider.gameObject == camp)
+                foreach (GameObject barrier in areaBarriers)
                 {
-                    foreach(GameObject barrier in areaBarriers)
-                    {
-                        barrier.SetActive(false);
-                    }
-                    lookoutDialogueUI.SetActive(false);
-                    spotFire.SetActive(true);
-                    Invoke("DisableSpotFireText", 25f);
+                    barrier.SetActive(false);
                 }
+                lookoutDialogueUI.SetActive(false);
+                spotFire.SetActive(true);
+                Invoke("DisableSpotFireText", 25f);
             }
         }
     }
-    
+
     private void DelayFirstDialogue()
     {
         selfDialogueUI.SetActive(true);
@@ -103,7 +99,6 @@ public class Tasks : MonoBehaviour
     private void LookoutTaskDialogue()
     {
         lookoutDialogueUI.SetActive(true);
-        canSpotFire = true;
     }
 
     private void DisableSpotFireText()
