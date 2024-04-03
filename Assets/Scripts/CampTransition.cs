@@ -2,29 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
+using StarterAssets;
 
 public class CampTransition : MonoBehaviour
 {
     [SerializeField] GameObject darkeningEffect;
     [SerializeField] Transform targetPosition;
-    private Quaternion targetRotation;
+    FirstPersonController fpsController;
+    [SerializeField] GameObject playerCameraRoot;
 
     private void Start()
     {
-        targetRotation = transform.rotation;
+        fpsController = GetComponent<FirstPersonController>();
     }
 
-    
+    private void Update()
+    {
+        if (!fpsController.enabled)
+        {
+            transform.position = targetPosition.position;
+            transform.rotation = targetPosition.rotation;
+            playerCameraRoot.SetActive(false);
+        }
+    }
+
     private async void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("ToCampTransition"))
         {
             darkeningEffect.SetActive(true);
             await Task.Delay(3000);
-            // vaiha player sijainti
-            transform.position = targetPosition.position;
-            targetRotation = Quaternion.Euler(0, -361, 0) * targetRotation;
+            fpsController.enabled = false;
             await Task.Delay(4000);
+            fpsController.enabled = true;
+            playerCameraRoot.SetActive(true);
             darkeningEffect.SetActive(false);
         }
     }
