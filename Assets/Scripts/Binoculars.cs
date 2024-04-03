@@ -10,7 +10,6 @@ public class Binoculars : MonoBehaviour
 
     [SerializeField] GameObject binoculars;
     [SerializeField] GameObject UI;
-    [SerializeField] GameObject binocInstructionUI;
     [SerializeField] float minZoom = 2f;
     [SerializeField] float maxZoom = 50f;
     [SerializeField] float sensitivity = 15f;
@@ -37,7 +36,6 @@ public class Binoculars : MonoBehaviour
         if (isZoomed)
         {
             ScrollWheelZoom();
-            binocInstructionUI.SetActive(false);
             if (fov <= 11 && hasSeenCamp == false)
             {
                 taskScript.SpotFire();

@@ -12,7 +12,6 @@ public class ShowItem : MonoBehaviour
     [SerializeField] Light flashLightSpotLight;
     [SerializeField] GameObject binocs;
 
-    [SerializeField] GameObject flashlightInstructionUI;
 
     //[SerializeField] AudioSource flashLightSource;
 
@@ -76,7 +75,6 @@ public class ShowItem : MonoBehaviour
             else if (flashLight.activeSelf && Input.GetKeyDown(KeyCode.F))
             {
                 flashLight.SetActive(false);
-                flashlightInstructionUI.SetActive(false);
             }
         }
     }

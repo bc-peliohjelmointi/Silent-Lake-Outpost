@@ -29,7 +29,10 @@ public class ItemPickup : MonoBehaviour
 
     private void Update()
     {
-        InteractWithObjects(mask1, cam, pickupBinocsUI, propBinocs);
+        if(taskScript.canPickUpBinocs)
+        {
+            InteractWithObjects(mask1, cam, pickupBinocsUI, propBinocs);
+        }
         InteractWithObjects(mask2, cam, pickupFlashUI, propFlashlight);
     }
 
@@ -57,13 +60,15 @@ public class ItemPickup : MonoBehaviour
             {
                 if (hit.collider.gameObject == item)
                 {
-                    if (item.name == "PropBinocs" && taskScript.canPickUpBinocs)
+                    item.SetActive(false);
+
+                    if (item.name == "PropBinocs")
                     {
                         binocInstructionUI.SetActive(true);
                         realBinocs.SetActive(true);
                         realFlashlight.SetActive(false);
                         flashlightInstructionUI.SetActive(false);
-                        item.SetActive(false);
+                        Invoke("TurnOffBinocInstructions", 8f);
                     }
 
                     else if (item.name == "PropFlashlight")
@@ -72,10 +77,20 @@ public class ItemPickup : MonoBehaviour
                         realFlashlight.SetActive(true);
                         realBinocs.SetActive(false);
                         binocInstructionUI.SetActive(false);
-                        item.SetActive(false);
+                        Invoke("TurnOffFlashlightInstructions", 8f);
                     }
                 }
             }
         }
+    }
+
+    private void TurnOffFlashlightInstructions()
+    {
+        flashlightInstructionUI.SetActive(false);
+    }
+
+    private void TurnOffBinocInstructions()
+    {
+        binocInstructionUI.SetActive(false);
     }
 }
