@@ -22,7 +22,7 @@ public class Tasks : MonoBehaviour
     Camera cam;
 
     private bool isTurnedOn = false;
-
+    public bool canPickUpBinocs = false;
 
     private void Start()
     {
@@ -89,7 +89,9 @@ public class Tasks : MonoBehaviour
                     selfDialogueUI.SetActive(false);
                     isTurnedOn = true;
                     generatorUI.SetActive(false);
+                    canPickUpBinocs = true;
                     Invoke("LookoutTaskDialogue", 5f);
+                    canPickUpBinocs = true;
                     // code here to turn on the generator sound 
                 }
             }

@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class PickUpItem : MonoBehaviour
+public class ItemPickup : MonoBehaviour
 {
     [SerializeField] LayerMask mask1;
     [SerializeField] LayerMask mask2;
@@ -18,11 +19,12 @@ public class PickUpItem : MonoBehaviour
     [SerializeField] GameObject realFlashlight;
     [SerializeField] GameObject realBinocs;
 
-    //private bool hasSomethingInHand = false;
+    Tasks taskScript;
 
     private void Start()
     {
         cam = Camera.main;
+        taskScript = GetComponent<Tasks>();
     }
 
     private void Update()
@@ -55,13 +57,13 @@ public class PickUpItem : MonoBehaviour
             {
                 if (hit.collider.gameObject == item)
                 {
-                    item.SetActive(false);
-                    if (item.name == "PropBinocs")
+                    if (item.name == "PropBinocs" && taskScript.canPickUpBinocs)
                     {
                         binocInstructionUI.SetActive(true);
                         realBinocs.SetActive(true);
                         realFlashlight.SetActive(false);
                         flashlightInstructionUI.SetActive(false);
+                        item.SetActive(false);
                     }
 
                     else if (item.name == "PropFlashlight")
@@ -70,6 +72,7 @@ public class PickUpItem : MonoBehaviour
                         realFlashlight.SetActive(true);
                         realBinocs.SetActive(false);
                         binocInstructionUI.SetActive(false);
+                        item.SetActive(false);
                     }
                 }
             }

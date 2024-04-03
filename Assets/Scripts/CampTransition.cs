@@ -9,7 +9,7 @@ public class CampTransition : MonoBehaviour
     {
         if (other.CompareTag("ToCampTransition"))
         {
-            darkeningEffect.SetActive(false);
+            darkeningEffect.SetActive(true);
         }
     }
 }
