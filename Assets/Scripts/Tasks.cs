@@ -19,6 +19,8 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject camp;
     [SerializeField] LayerMask maskCamp;
 
+    [SerializeField] Light binocLight;
+
     Camera cam;
 
     private bool isTurnedOn = false;
@@ -92,6 +94,7 @@ public class Tasks : MonoBehaviour
                     canPickUpBinocs = true;
                     Invoke("LookoutTaskDialogue", 5f);
                     canPickUpBinocs = true;
+                    binocLight.enabled = true;
                     // code here to turn on the generator sound 
                 }
             }

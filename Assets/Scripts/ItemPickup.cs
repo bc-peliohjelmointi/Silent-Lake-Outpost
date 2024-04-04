@@ -18,6 +18,7 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] GameObject flashlightInstructionUI;
     [SerializeField] GameObject realFlashlight;
     [SerializeField] GameObject realBinocs;
+    [SerializeField] Light binocLight;
 
     Tasks taskScript;
 
@@ -69,6 +70,7 @@ public class ItemPickup : MonoBehaviour
                         realFlashlight.SetActive(false);
                         flashlightInstructionUI.SetActive(false);
                         Invoke("TurnOffBinocInstructions", 8f);
+                        binocLight.enabled = false;
                     }
 
                     else if (item.name == "PropFlashlight")
