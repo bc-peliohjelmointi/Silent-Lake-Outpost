@@ -18,7 +18,7 @@ public class CampTransition : MonoBehaviour
 
     private void Update()
     {
-        if (!fpsController.enabled)
+        if (!fpsController.enabled && darkeningEffect.activeSelf)
         {
             transform.position = targetPosition.position;
             transform.rotation = targetPosition.rotation;
