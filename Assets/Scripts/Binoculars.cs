@@ -16,7 +16,6 @@ public class Binoculars : MonoBehaviour
     public float fov;
 
     public bool isZoomed;
-    private bool hasSeenCamp;
 
     [SerializeField] Texture2D binocImage;
     Tasks taskScript;
@@ -26,7 +25,6 @@ public class Binoculars : MonoBehaviour
     {
         taskScript = GetComponent<Tasks>();
         pauseScript = GetComponent<Bringup>();
-        hasSeenCamp = false;
     }
 
     private void Update()
@@ -36,10 +34,9 @@ public class Binoculars : MonoBehaviour
         if (isZoomed)
         {
             ScrollWheelZoom();
-            if (fov <= 11 && hasSeenCamp == false)
+            if (fov <= 11 && !taskScript.hasSeenCamp)
             {
                 taskScript.SpotFire();
-                Invoke("SawCamp", 1f);
             }
         }
 
@@ -47,11 +44,6 @@ public class Binoculars : MonoBehaviour
         {
             _virtualCamera.m_Lens.FieldOfView = Mathf.Lerp(_virtualCamera.m_Lens.FieldOfView, maxZoom, Time.deltaTime * sensitivity);
         }
-    }
-
-    private void SawCamp()
-    {
-        hasSeenCamp = true;
     }
 
     void CheckZoom()

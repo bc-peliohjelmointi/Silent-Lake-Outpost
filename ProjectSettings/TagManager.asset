@@ -10,6 +10,7 @@ TagManager:
   - ToCampTransition
   - Ground
   - WoodFloor
+  - WrongPathBarrier
   layers:
   - Default
   - TransparentFX

@@ -25,6 +25,8 @@ public class Tasks : MonoBehaviour
 
     private bool isTurnedOn = false;
     public bool canPickUpBinocs = false;
+    public bool hasSeenCamp = false;
+
 
     private void Start()
     {
@@ -52,7 +54,8 @@ public class Tasks : MonoBehaviour
                 }
                 lookoutDialogueUI.SetActive(false);
                 spotFire.SetActive(true);
-                Invoke("DisableSpotFireText", 25f);
+                hasSeenCamp = true;
+                Invoke("DisableSpotFireText", 7f);
             }
         }
     }
