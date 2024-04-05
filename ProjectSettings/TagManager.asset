@@ -8,6 +8,8 @@ TagManager:
   - DayCycleTrigger
   - GeneratorBarrier
   - ToCampTransition
+  - Ground
+  - WoodFloor
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Camp
   - CabinDoor
   - CampFire
-  - 
+  - Ground
   - 
   - 
   - 
