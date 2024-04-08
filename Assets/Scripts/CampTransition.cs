@@ -10,6 +10,9 @@ public class CampTransition : MonoBehaviour
     [SerializeField] Transform targetPosition;
     FirstPersonController fpsController;
     [SerializeField] GameObject playerCameraRoot;
+    [SerializeField] GameObject turnOffFireUI;
+
+    [SerializeField] GameObject binocs;
 
     private void Start()
     {
@@ -30,6 +33,7 @@ public class CampTransition : MonoBehaviour
     {
         if (other.CompareTag("ToCampTransition"))
         {
+            binocs.SetActive(false);
             darkeningEffect.SetActive(true);
             await Task.Delay(3000);
             fpsController.enabled = false;
@@ -37,6 +41,13 @@ public class CampTransition : MonoBehaviour
             fpsController.enabled = true;
             playerCameraRoot.SetActive(true);
             darkeningEffect.SetActive(false);
+            turnOffFireUI.SetActive(true);
+            Invoke("TurnOffUIPrompt", 10f);
         }
+    }
+
+    private void TurnOffUIPrompt()
+    {
+        turnOffFireUI.SetActive(false);
     }
 }

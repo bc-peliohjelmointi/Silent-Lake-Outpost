@@ -15,6 +15,7 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject[] areaBarriers;
 
     // variables for scouting out the campfire
+    [SerializeField] GameObject binocInstructions;
     [SerializeField] GameObject spotFire;
     [SerializeField] GameObject camp;
     [SerializeField] LayerMask maskCamp;
@@ -55,6 +56,7 @@ public class Tasks : MonoBehaviour
                 lookoutDialogueUI.SetActive(false);
                 spotFire.SetActive(true);
                 hasSeenCamp = true;
+                binocInstructions.SetActive(false);
                 Invoke("DisableSpotFireText", 7f);
             }
         }
@@ -95,7 +97,7 @@ public class Tasks : MonoBehaviour
                     isTurnedOn = true;
                     generatorUI.SetActive(false);
                     canPickUpBinocs = true;
-                    Invoke("LookoutTaskDialogue", 5f);
+                    Invoke("LookoutTaskDialogue", 3f);
                     canPickUpBinocs = true;
                     binocLight.enabled = true;
                     // code here to turn on the generator sound 

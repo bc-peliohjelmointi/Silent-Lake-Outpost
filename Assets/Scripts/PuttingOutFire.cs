@@ -10,6 +10,9 @@ public class PuttingOutFire : MonoBehaviour
     [SerializeField] GameObject Darkening;
     [SerializeField] LayerMask maskFire;
 
+    [SerializeField] GameObject turnOffFireUI;
+    [SerializeField] GameObject questionUI;
+
 
     Camera cam;
     private void Start()
@@ -51,6 +54,8 @@ public class PuttingOutFire : MonoBehaviour
                     Destroy(Fire);
                     await Task.Delay(4000);
                     Darkening.SetActive(false);
+                    turnOffFireUI.SetActive(false);
+                    questionUI.SetActive(true);
                 }
             }
         }

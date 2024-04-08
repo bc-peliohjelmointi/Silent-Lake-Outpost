@@ -17,6 +17,10 @@ public class ShowItem : MonoBehaviour
 
     //[SerializeField] AudioClip flashLightClip;
 
+    [SerializeField] GameObject flashlightIcon;
+    [SerializeField] GameObject binocularsIcon;
+
+
 
     Binoculars binocScript;
 
@@ -77,6 +81,16 @@ public class ShowItem : MonoBehaviour
                 flashLight.SetActive(false);
             }
         }
+
+        if(flashLight.activeSelf)
+        {
+            flashlightIcon.SetActive(true);
+        }
+
+        else
+        {
+            flashlightIcon.SetActive(false);
+        }
     }
     
 
@@ -100,6 +114,16 @@ public class ShowItem : MonoBehaviour
             {
                 binocs.SetActive(false);
             }
+        }
+
+        if(binocs.activeSelf)
+        {
+            binocularsIcon.SetActive(true);
+        }
+
+        else
+        {
+            binocularsIcon.SetActive(false);
         }
     }
     
