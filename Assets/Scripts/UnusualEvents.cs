@@ -8,6 +8,7 @@ public class UnusualEvents : MonoBehaviour
     Camera cam;
     [SerializeField] GameObject turnOffFireUI;
     [SerializeField] GameObject questioningUI;
+    [SerializeField] GameObject backToTowerUI;
 
     // variables for spotting meat in the camp area
     [SerializeField] GameObject spottedMeatUI;
@@ -39,6 +40,7 @@ public class UnusualEvents : MonoBehaviour
             {
                 turnOffFireUI.SetActive(false);
                 questioningUI.SetActive(false);
+                backToTowerUI.SetActive(false);
                 spottedMeatUI.SetActive(true);
                 Invoke("TurnOffSpotMeatUI", 3f);
             }
