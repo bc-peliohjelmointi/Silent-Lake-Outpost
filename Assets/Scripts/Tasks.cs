@@ -104,7 +104,7 @@ public class Tasks : MonoBehaviour
                     canPickUpBinocs = true;
                     binocLight.enabled = true;
                     GeneratorStart.enabled = true;
-                    Invoke("TurnOnLoop", 15f);
+                    Invoke("TurnOnLoop", 5f);
                 }
             }
         }
@@ -114,6 +114,7 @@ public class Tasks : MonoBehaviour
     {
         GeneratorLoop.enabled = true;
         GeneratorStart.enabled = false;
+        
     }
 
     private void LookoutTaskDialogue()
