@@ -12,6 +12,9 @@ public class PuttingOutFire : MonoBehaviour
 
     [SerializeField] GameObject turnOffFireUI;
     [SerializeField] GameObject questionUI;
+    [SerializeField] GameObject backToTowerUI;
+
+    [SerializeField] GameObject transitionToTowerTrigger;
 
 
     Camera cam;
@@ -47,6 +50,7 @@ public class PuttingOutFire : MonoBehaviour
             {
                 if (Physics.Raycast(ray, out hit, 2, mask))
                 {
+                    transitionToTowerTrigger.SetActive(true);
                     Darkening.SetActive(true);
                     IsFireOn.SetActive(false);
                     UI.SetActive(false);
@@ -56,9 +60,21 @@ public class PuttingOutFire : MonoBehaviour
                     Darkening.SetActive(false);
                     turnOffFireUI.SetActive(false);
                     questionUI.SetActive(true);
+                    Invoke("TurnOffQuestionUI", 4f);
+                    Invoke("BackToTowerUI", 5f);
                 }
             }
         }
         
+    }
+
+    private void TurnOffQuestionUI()
+    {
+        questionUI.SetActive(false);
+    }
+
+    private void BackToTowerUI() 
+    {
+        backToTowerUI.SetActive(true);
     }
 }

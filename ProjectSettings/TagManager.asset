@@ -11,6 +11,7 @@ TagManager:
   - Ground
   - WoodFloor
   - WrongPathBarrier
+  - ToTowerTransition
   layers:
   - Default
   - TransparentFX
