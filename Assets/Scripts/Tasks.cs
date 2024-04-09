@@ -11,6 +11,9 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject generatorUI;
     [SerializeField] LayerMask maskGenerator;
 
+    [SerializeField] AudioSource GeneratorStart;
+    [SerializeField] AudioSource GeneratorLoop;
+
     [SerializeField] GameObject lookoutDialogueUI;
     [SerializeField] GameObject[] areaBarriers;
 
@@ -100,10 +103,17 @@ public class Tasks : MonoBehaviour
                     Invoke("LookoutTaskDialogue", 3f);
                     canPickUpBinocs = true;
                     binocLight.enabled = true;
-                    // code here to turn on the generator sound 
+                    GeneratorStart.enabled = true;
+                    Invoke("TurnOnLoop", 15f);
                 }
             }
         }
+    }
+
+    private void TurnOnLoop()
+    {
+        GeneratorLoop.enabled = true;
+        GeneratorStart.enabled = false;
     }
 
     private void LookoutTaskDialogue()
