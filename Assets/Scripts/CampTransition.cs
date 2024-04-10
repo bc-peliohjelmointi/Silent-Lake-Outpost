@@ -19,9 +19,12 @@ public class CampTransition : MonoBehaviour
     [SerializeField] GameObject goToSleepUI;
     [SerializeField] GameObject backToTowerUI;
     [SerializeField] GameObject NoLeavingBarrier;
+    [SerializeField] GameObject WrongPathTrigger;
 
     private bool transitionToCamp = false;
     private bool transitionToTower = false;
+
+    public bool canSleep = false;
 
     private void Start()
     {
@@ -52,6 +55,7 @@ public class CampTransition : MonoBehaviour
     {
         if (other.CompareTag("ToCampTransition"))
         {
+            WrongPathTrigger.SetActive(false);
             transitionToCamp = true;
             binocs.SetActive(false);
             darkeningEffect.SetActive(true);
@@ -69,6 +73,7 @@ public class CampTransition : MonoBehaviour
 
         else if (other.CompareTag("ToTowerTransition"))
         {
+            canSleep = true;
             NoLeavingBarrier.SetActive(true);
             transitionToTower = true;
             binocs.SetActive(false);

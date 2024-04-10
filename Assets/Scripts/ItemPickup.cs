@@ -20,6 +20,8 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] GameObject realBinocs;
     [SerializeField] Light binocLight;
 
+    [SerializeField] GameObject scoutingBarrier;
+
     Tasks taskScript;
 
     private void Start()
@@ -65,6 +67,7 @@ public class ItemPickup : MonoBehaviour
 
                     if (item.name == "PropBinocs")
                     {
+                        scoutingBarrier.SetActive(true);
                         binocInstructionUI.SetActive(true);
                         realBinocs.SetActive(true);
                         realFlashlight.SetActive(false);

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class Tasks : MonoBehaviour
 {
@@ -22,8 +23,14 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject spotFire;
     [SerializeField] GameObject camp;
     [SerializeField] LayerMask maskCamp;
+    [SerializeField] GameObject scoutingBarrier;
 
     [SerializeField] Light binocLight;
+
+    // variables for sleeping task
+    [SerializeField] GameObject bed;
+    [SerializeField] LayerMask maskBed;
+    [SerializeField] GameObject goToSleepUI;
 
     Camera cam;
 
@@ -31,9 +38,12 @@ public class Tasks : MonoBehaviour
     public bool canPickUpBinocs = false;
     public bool hasSeenCamp = false;
 
+    CampTransition campTransitionScript;
+
 
     private void Start()
     {
+        campTransitionScript = GetComponent<CampTransition>();
         cam = Camera.main;
         Invoke("TurnOffLights", 13f);
         Invoke("DelayFirstDialogue", 14f);
@@ -42,6 +52,11 @@ public class Tasks : MonoBehaviour
     private void Update()
     {
         TurnOnGenerator(maskGenerator, cam, generatorUI, generator);
+
+        if (campTransitionScript.canSleep)
+        {
+            Sleeping(maskBed, cam, goToSleepUI, bed);
+        }
     }
 
     public void SpotFire()
@@ -56,6 +71,7 @@ public class Tasks : MonoBehaviour
                 {
                     barrier.SetActive(false);
                 }
+                scoutingBarrier.SetActive(false);
                 lookoutDialogueUI.SetActive(false);
                 spotFire.SetActive(true);
                 hasSeenCamp = true;
@@ -105,6 +121,36 @@ public class Tasks : MonoBehaviour
                     binocLight.enabled = true;
                     GeneratorStart.enabled = true;
                     Invoke("TurnOnLoop", 5f);
+                }
+            }
+        }
+    }
+
+    private void Sleeping(LayerMask mask, Camera cam, GameObject UI, GameObject item)
+    {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 2, mask))
+        {
+            if (hit.collider.gameObject == item)
+            {
+                UI.SetActive(true);
+            }
+        }
+
+        else
+        {
+            UI.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (Physics.Raycast(ray, out hit, 2, mask))
+            {
+                if (hit.collider.gameObject == item)
+                {
+                    // koodi mitä tapahtuu kun pelaaja interactaa sängyn kanssa
                 }
             }
         }
