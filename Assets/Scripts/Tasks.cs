@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
+using System.Threading.Tasks;
+using StarterAssets;
+
 
 public class Tasks : MonoBehaviour
 {
@@ -31,19 +34,30 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject bed;
     [SerializeField] LayerMask maskBed;
     [SerializeField] GameObject goToSleepUI;
+    [SerializeField] GameObject flashlight;
+    [SerializeField] GameObject binoculars;
+    [SerializeField] GameObject darkeningEffect;
+    [SerializeField] GameObject playerCameraRoot;
+    [SerializeField] GameObject knockingDialogue;
+
+    [SerializeField] AudioSource doorAudioSource;
+
 
     Camera cam;
 
     private bool isTurnedOn = false;
     public bool canPickUpBinocs = false;
     public bool hasSeenCamp = false;
+    private bool hasSlept = false;
 
     CampTransition campTransitionScript;
+    FirstPersonController fpsController;
 
 
     private void Start()
     {
         campTransitionScript = GetComponent<CampTransition>();
+        fpsController = GetComponent<FirstPersonController>();
         cam = Camera.main;
         Invoke("TurnOffLights", 13f);
         Invoke("DelayFirstDialogue", 14f);
@@ -53,7 +67,7 @@ public class Tasks : MonoBehaviour
     {
         TurnOnGenerator(maskGenerator, cam, generatorUI, generator);
 
-        if (campTransitionScript.canSleep)
+        if (campTransitionScript.canSleep && !hasSlept)
         {
             Sleeping(maskBed, cam, goToSleepUI, bed);
         }
@@ -126,7 +140,7 @@ public class Tasks : MonoBehaviour
         }
     }
 
-    private void Sleeping(LayerMask mask, Camera cam, GameObject UI, GameObject item)
+    private async void Sleeping(LayerMask mask, Camera cam, GameObject UI, GameObject item)
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -150,7 +164,19 @@ public class Tasks : MonoBehaviour
             {
                 if (hit.collider.gameObject == item)
                 {
-                    // koodi mitä tapahtuu kun pelaaja interactaa sängyn kanssa
+                    fpsController.enabled = false;
+                    goToSleepUI.SetActive(false);
+                    flashlight.SetActive(false);
+                    binoculars.SetActive(false);
+                    darkeningEffect.SetActive(true);
+                    await Task.Delay(3000);
+                    doorAudioSource.enabled = true;
+                    await Task.Delay(4000);
+                    knockingDialogue.SetActive(true);
+                    fpsController.enabled = true;
+                    playerCameraRoot.SetActive(true);
+                    darkeningEffect.SetActive(false);
+                    hasSlept = true;
                 }
             }
         }
