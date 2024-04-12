@@ -21,6 +21,8 @@ public class CampTransition : MonoBehaviour
     [SerializeField] GameObject NoLeavingBarrier;
     [SerializeField] GameObject WrongPathTrigger;
 
+    [SerializeField] GameObject footSteps;
+
     private bool transitionToCamp = false;
     private bool transitionToTower = false;
 
@@ -49,6 +51,8 @@ public class CampTransition : MonoBehaviour
                 playerCameraRoot.SetActive(false);
             }
         }
+
+        DisableFootsteps();
     }
 
     private async void OnTriggerEnter(Collider other)
@@ -88,6 +92,19 @@ public class CampTransition : MonoBehaviour
             darkeningEffect.SetActive(false);
             Invoke("TurnOnSleepUI", 3f);
             Invoke("TurnOffSleepUI", 8f);
+        }
+    }
+
+    private void DisableFootsteps()
+    {
+        if(darkeningEffect.activeSelf)
+        {
+            footSteps.SetActive(false);
+        }
+
+        else
+        {
+            footSteps.SetActive(true);
         }
     }
 

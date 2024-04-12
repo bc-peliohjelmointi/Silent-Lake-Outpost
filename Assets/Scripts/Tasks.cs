@@ -39,8 +39,11 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject darkeningEffect;
     [SerializeField] GameObject playerCameraRoot;
     [SerializeField] GameObject knockingDialogue;
+    [SerializeField] GameObject closeDoorText;
 
     [SerializeField] AudioSource doorAudioSource;
+    [SerializeField] AudioSource windSound;
+    [SerializeField] AudioSource spookyMusic;
 
 
     Camera cam;
@@ -52,10 +55,12 @@ public class Tasks : MonoBehaviour
 
     CampTransition campTransitionScript;
     FirstPersonController fpsController;
+    DoorInteractable doorScript;
 
 
     private void Start()
     {
+        doorScript = GetComponent<DoorInteractable>();
         campTransitionScript = GetComponent<CampTransition>();
         fpsController = GetComponent<FirstPersonController>();
         cam = Camera.main;
@@ -65,7 +70,10 @@ public class Tasks : MonoBehaviour
 
     private void Update()
     {
-        TurnOnGenerator(maskGenerator, cam, generatorUI, generator);
+        if(!isTurnedOn)
+        {
+            TurnOnGenerator(maskGenerator, cam, generatorUI, generator);
+        }
 
         if (campTransitionScript.canSleep && !hasSlept)
         {
@@ -147,9 +155,12 @@ public class Tasks : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 2, mask))
         {
-            if (hit.collider.gameObject == item)
+            if (!hasSlept)
             {
-                UI.SetActive(true);
+                if (hit.collider.gameObject == item)
+                {
+                    UI.SetActive(true);
+                }
             }
         }
 
@@ -164,19 +175,30 @@ public class Tasks : MonoBehaviour
             {
                 if (hit.collider.gameObject == item)
                 {
-                    fpsController.enabled = false;
-                    goToSleepUI.SetActive(false);
-                    flashlight.SetActive(false);
-                    binoculars.SetActive(false);
-                    darkeningEffect.SetActive(true);
-                    await Task.Delay(3000);
-                    doorAudioSource.enabled = true;
-                    await Task.Delay(4000);
-                    knockingDialogue.SetActive(true);
-                    fpsController.enabled = true;
-                    playerCameraRoot.SetActive(true);
-                    darkeningEffect.SetActive(false);
-                    hasSlept = true;
+                    if (!doorScript.DoorOpen.activeSelf)
+                    {
+                        hasSlept = true;
+                        fpsController.enabled = false;
+                        goToSleepUI.SetActive(false);
+                        flashlight.SetActive(false);
+                        binoculars.SetActive(false);
+                        darkeningEffect.SetActive(true);
+                        await Task.Delay(3000);
+                        windSound.enabled = false;
+                        doorAudioSource.enabled = true;
+                        await Task.Delay(4000);
+                        spookyMusic.enabled = true;
+                        knockingDialogue.SetActive(true);
+                        fpsController.enabled = true;
+                        playerCameraRoot.SetActive(true);
+                        darkeningEffect.SetActive(false);
+                        closeDoorText.SetActive(false);
+                    }
+
+                    else
+                    {
+                        closeDoorText.SetActive(true);
+                    }
                 }
             }
         }

@@ -14,6 +14,10 @@ public class DoorInteractable : MonoBehaviour
     float smoothTime = 4f;
 
     Quaternion targetRotation;
+
+    // variable for lowering background sounds when player is inside with the door closed
+
+    [SerializeField] AudioSource cricketSounds;
     private void Start()
     {
         cam = Camera.main;
@@ -72,6 +76,19 @@ public class DoorInteractable : MonoBehaviour
                 isDoorOpening = true;
                 isDoorMoving = true; 
             }
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("InsideTrigger") && !DoorOpen.activeSelf && !isDoorMoving)
+        {
+            cricketSounds.volume = 0.15f;
+        }
+
+        else
+        {
+            cricketSounds.volume = 0.5f;
         }
     }
 }

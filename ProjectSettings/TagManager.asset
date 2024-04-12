@@ -12,6 +12,7 @@ TagManager:
   - WoodFloor
   - WrongPathBarrier
   - ToTowerTransition
+  - InsideTrigger
   layers:
   - Default
   - TransparentFX
