@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Threading.Tasks;
+using StarterAssets;
 
 public class PuttingOutFire : MonoBehaviour
 {
@@ -16,11 +17,13 @@ public class PuttingOutFire : MonoBehaviour
 
     [SerializeField] GameObject transitionToTowerTrigger;
 
-
     Camera cam;
+
+    FirstPersonController fpsController;
     private void Start()
     {
         cam = Camera.main;
+        fpsController = GetComponent<FirstPersonController>();
     }
     private void Update()
     {
@@ -55,8 +58,10 @@ public class PuttingOutFire : MonoBehaviour
                     IsFireOn.SetActive(false);
                     UI.SetActive(false);
                     await Task.Delay(3000);
+                    fpsController.enabled = false;
                     Destroy(Fire);
                     await Task.Delay(4000);
+                    fpsController.enabled = true;
                     Darkening.SetActive(false);
                     turnOffFireUI.SetActive(false);
                     questionUI.SetActive(true);

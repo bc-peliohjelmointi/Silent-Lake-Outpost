@@ -9,7 +9,7 @@ public class DoorInteractable : MonoBehaviour
     public GameObject DoorOpen;
 
     Camera cam;
-    bool isDoorOpening = false;
+    public bool isDoorOpening = false;
     bool isDoorMoving = false; 
     float smoothTime = 4f;
 
