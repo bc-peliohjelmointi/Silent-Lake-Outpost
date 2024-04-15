@@ -80,8 +80,8 @@ public class Tasks : MonoBehaviour
         campTransitionScript = GetComponent<CampTransition>();
         fpsController = GetComponent<FirstPersonController>();
         cam = Camera.main;
-        Invoke("TurnOffLights", 13f);
-        Invoke("DelayFirstDialogue", 14f);
+        Invoke("TurnOffLights", 6f);
+        Invoke("DelayFirstDialogue", 7f);
     }
 
     private void Update()
@@ -258,9 +258,9 @@ public class Tasks : MonoBehaviour
                 if (hit.collider.gameObject == item)
                 {
                     radioNoise.enabled = true;
-                    radioNotWorkingDialogue.SetActive(true);
+                    Invoke("TurnOnRadioNotWorking", 1f);
                     radioDialogue.SetActive(false);
-                    Invoke("TurnOffRadioNotWorkingUI", 4f);
+                    Invoke("TurnOffRadioNotWorkingUI", 5f);
                     canUseRadio = false;
                 }
             }
@@ -278,8 +278,8 @@ public class Tasks : MonoBehaviour
             {
                 hasSeenArm = true;
                 UI.SetActive(true);
-                Invoke("TurnOffArmUI", 3f);
-                Invoke("RadioContactUI", 3.1f);
+                Invoke("TurnOffArmUI", 4f);
+                Invoke("RadioContactUI", 4.1f);
                 Invoke("TurnOffContactUI", 6f);
                 canUseRadio = true;
             }
@@ -291,8 +291,13 @@ public class Tasks : MonoBehaviour
         if(doorScript.isDoorOpening)
         {
             arm.SetActive(true);
-            armJumpscare.enabled = true;
+            Invoke("ArmJumpscareSound", 0.5f);
         }
+    }
+
+    private void ArmJumpscareSound()
+    {
+        armJumpscare.enabled = true;
     }
 
     private void TurnOffArmUI()
@@ -300,6 +305,10 @@ public class Tasks : MonoBehaviour
         seenArmUI.SetActive(false);
     }
 
+    private void TurnOnRadioNotWorking()
+    {
+        radioNotWorkingDialogue.SetActive(true);
+    }
     private void TurnOffRadioNotWorkingUI()
     {
         radioNotWorkingDialogue.SetActive(false);
