@@ -67,11 +67,11 @@ public class FootSteps : MonoBehaviour
                 footstepfloor.SetActive(false);
                 if (isRunning)
                 {
-                    footstepground.GetComponent<AudioSource>().pitch = 1.5f;
+                    footstepground.GetComponent<AudioSource>().pitch = 1.3f;
                 }
                 else
                 {
-                    footstepground.GetComponent<AudioSource>().pitch = 1f;
+                    footstepground.GetComponent<AudioSource>().pitch = 0.9f;
                 }
             }
             else if (isFloorTagged)
@@ -80,11 +80,11 @@ public class FootSteps : MonoBehaviour
                 footstepground.SetActive(false);
                 if (isRunning)
                 {
-                    footstepfloor.GetComponent<AudioSource>().pitch = 1.5f;
+                    footstepfloor.GetComponent<AudioSource>().pitch = 1.7f;
                 }
                 else
                 {
-                    footstepfloor.GetComponent<AudioSource>().pitch = 1f;
+                    footstepfloor.GetComponent<AudioSource>().pitch = 1.2f;
                 }
             }
         }
