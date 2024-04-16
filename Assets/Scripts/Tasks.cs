@@ -260,6 +260,7 @@ public class Tasks : MonoBehaviour
             {
                 if (hit.collider.gameObject == item)
                 {
+                    UI.SetActive(false);
                     radioNoise.enabled = true;
                     Invoke("TurnOnRadioNotWorking", 1f);
                     radioDialogue.SetActive(false);
@@ -281,9 +282,9 @@ public class Tasks : MonoBehaviour
             {
                 hasSeenArm = true;
                 UI.SetActive(true);
-                Invoke("TurnOffArmUI", 4f);
-                Invoke("RadioContactUI", 4.1f);
-                Invoke("TurnOffContactUI", 6f);
+                Invoke("TurnOffArmUI", 5f);
+                Invoke("RadioContactUI", 5.5f);
+                Invoke("TurnOffContactUI", 9f);
                 canUseRadio = true;
             }
         }
