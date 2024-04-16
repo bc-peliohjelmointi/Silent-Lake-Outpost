@@ -41,6 +41,7 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject playerCameraRoot;
     [SerializeField] GameObject knockingDialogue;
     [SerializeField] GameObject closeDoorText;
+    [SerializeField] GameObject runningSound;
 
     [SerializeField] AudioSource doorAudioSource;
     [SerializeField] AudioSource windSound;
@@ -214,7 +215,9 @@ public class Tasks : MonoBehaviour
                         await Task.Delay(3000);
                         windSound.enabled = false;
                         doorAudioSource.enabled = true;
-                        await Task.Delay(4000);
+                        await Task.Delay(2000);
+                        runningSound.gameObject.SetActive(true);
+                        await Task.Delay(2000);
                         spookyMusic.enabled = true;
                         knockingDialogue.SetActive(true);
                         Invoke("TurnOffKnockingDialogue", 3f);
