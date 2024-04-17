@@ -47,12 +47,14 @@ public class Tasks : MonoBehaviour
     [SerializeField] AudioSource windSound;
     [SerializeField] AudioSource spookyMusic;
 
-    // variables for the falling arm jumpscare after opening door
+    // variables for the arm jumpscare after opening door
     [SerializeField] GameObject arm;
     [SerializeField] LayerMask armLayer;
     [SerializeField] AudioSource armJumpscare;
     private bool hasSeenArm = false;
     [SerializeField] GameObject seenArmUI;
+    [SerializeField] GameObject paper;
+    [SerializeField] GameObject paperPin;
 
     //variables for radio contact task
     [SerializeField] GameObject radio;
@@ -294,6 +296,8 @@ public class Tasks : MonoBehaviour
     {
         if(doorScript.isDoorOpening)
         {
+            paper.SetActive(true);
+            paperPin.SetActive(true);
             arm.SetActive(true);
             Invoke("ArmJumpscareSound", 0.5f);
         }
