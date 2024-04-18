@@ -212,7 +212,6 @@ public class Tasks : MonoBehaviour
                         fpsController.enabled = false;
                         goToSleepUI.SetActive(false);
                         flashlight.SetActive(false);
-                        binoculars.SetActive(false);
                         darkeningEffect.SetActive(true);
                         await Task.Delay(3000);
                         windSound.enabled = false;
