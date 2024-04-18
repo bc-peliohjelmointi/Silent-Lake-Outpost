@@ -9,12 +9,10 @@ public class MainMenu : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Cursor.visible = false;
     }
 
-    public void GoToSettingsMenu()
-    {
-        SceneManager.LoadScene("SettingsMenu");
-    }
+
 
     public void GoToMainMenu()
     {
