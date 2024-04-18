@@ -13,12 +13,14 @@ public class ShowItem : MonoBehaviour
     [SerializeField] GameObject binocs;
 
 
-    //[SerializeField] AudioSource flashLightSource;
-
-    //[SerializeField] AudioClip flashLightClip;
+    [SerializeField] AudioSource flashLightSource;
+    [SerializeField] AudioClip flashLightClip;
 
     [SerializeField] GameObject flashlightIcon;
     [SerializeField] GameObject binocularsIcon;
+
+    [SerializeField] GameObject note;
+    [SerializeField] GameObject darkening;
 
 
 
@@ -31,9 +33,22 @@ public class ShowItem : MonoBehaviour
 
     private void Update()
     {
-        FlashLightOn();
-        FlashLightShow();
-        BinocularsShow();
+        if(!darkening.activeSelf && !note.activeSelf)
+        {
+            FlashLightOn();
+            FlashLightShow();
+            BinocularsShow();
+        }
+
+        else if(darkening.activeSelf || note.activeSelf)
+        {
+            if (note.activeSelf)
+            {
+                flashLight.SetActive(false);
+            }
+
+            binocs.SetActive(false);
+        }
     }
 
 
@@ -42,27 +57,28 @@ public class ShowItem : MonoBehaviour
         if (flashLight.activeSelf && !flashLightSpotLight.enabled && Input.GetKeyDown(KeyCode.Mouse0))
         {
             flashLightSpotLight.enabled = true;
-            //flashLightSource.PlayOneShot(flashLightClip);
+            flashLightSource.PlayOneShot(flashLightClip);
 
         }
 
-        else if(flashLightSpotLight.enabled && Input.GetKeyDown(KeyCode.Mouse0)) 
-        { 
+        else if (flashLightSpotLight.enabled && Input.GetKeyDown(KeyCode.Mouse0))
+        {
             flashLightSpotLight.enabled = false;
         }
 
-        
+
 
         else if (binocs.activeSelf || !flashLight.activeSelf)
         {
             flashLightSpotLight.enabled = false;
         }
-        
+
     }
 
-    
+
     void FlashLightShow()
     {
+
         if (!propFlashlight.activeSelf)
         {
             if (!flashLight.activeSelf && !binocs.activeSelf && !binocScript.isZoomed && Input.GetKeyDown(KeyCode.F))
@@ -82,7 +98,7 @@ public class ShowItem : MonoBehaviour
             }
         }
 
-        if(flashLight.activeSelf)
+        if (flashLight.activeSelf)
         {
             flashlightIcon.SetActive(true);
         }
@@ -91,12 +107,14 @@ public class ShowItem : MonoBehaviour
         {
             flashlightIcon.SetActive(false);
         }
-    }
-    
 
-    
+    }
+
+
+
     void BinocularsShow()
     {
+
         if (!propBinocs.activeSelf)
         {
             if (!binocs.activeSelf && !flashLight.activeSelf && !binocScript.isZoomed && Input.GetKeyDown(KeyCode.B))
@@ -116,7 +134,7 @@ public class ShowItem : MonoBehaviour
             }
         }
 
-        if(binocs.activeSelf)
+        if (binocs.activeSelf)
         {
             binocularsIcon.SetActive(true);
         }
@@ -126,5 +144,5 @@ public class ShowItem : MonoBehaviour
             binocularsIcon.SetActive(false);
         }
     }
-    
+
 }

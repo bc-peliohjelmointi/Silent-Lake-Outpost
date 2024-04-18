@@ -53,12 +53,12 @@ public class PuttingOutFire : MonoBehaviour
             {
                 if (Physics.Raycast(ray, out hit, 2, mask))
                 {
+                    fpsController.enabled = false;
                     transitionToTowerTrigger.SetActive(true);
                     Darkening.SetActive(true);
                     IsFireOn.SetActive(false);
                     UI.SetActive(false);
                     await Task.Delay(3000);
-                    fpsController.enabled = false;
                     Destroy(Fire);
                     await Task.Delay(4000);
                     fpsController.enabled = true;

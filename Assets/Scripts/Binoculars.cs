@@ -8,6 +8,9 @@ public class Binoculars : MonoBehaviour
 {
     [SerializeField] CinemachineVirtualCamera _virtualCamera;
 
+    [SerializeField] GameObject darkening;
+    [SerializeField] GameObject note;
+
     [SerializeField] GameObject binoculars;
     [SerializeField] GameObject UI;
     [SerializeField] float minZoom = 2f;
@@ -57,6 +60,11 @@ public class Binoculars : MonoBehaviour
         {
             isZoomed = false;
             binoculars.SetActive(true);
+        }
+
+        else if(darkening.activeSelf || note.activeSelf)
+        {
+            isZoomed = false;
         }
 
         else if (!isZoomed)

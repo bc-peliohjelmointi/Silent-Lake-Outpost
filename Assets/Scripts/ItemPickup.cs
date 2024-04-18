@@ -1,7 +1,9 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemPickup : MonoBehaviour
 {
@@ -22,12 +24,22 @@ public class ItemPickup : MonoBehaviour
 
     [SerializeField] GameObject scoutingBarrier;
 
+    // variables for picking up note
+    [SerializeField] LayerMask noteLayer;
+    [SerializeField] GameObject note;
+    [SerializeField] GameObject noteUI;
+    [SerializeField] GameObject noteImageUI;
+    private bool holdingNote = false;
+
+
     Tasks taskScript;
+    FirstPersonController fpsController;
 
     private void Start()
     {
         cam = Camera.main;
         taskScript = GetComponent<Tasks>();
+        fpsController = GetComponent<FirstPersonController>();
     }
 
     private void Update()
@@ -37,6 +49,8 @@ public class ItemPickup : MonoBehaviour
             InteractWithObjects(mask1, cam, pickupBinocsUI, propBinocs);
         }
         InteractWithObjects(mask2, cam, pickupFlashUI, propFlashlight);
+
+        PickupNote(noteLayer, cam, noteUI, note, noteImageUI);
     }
 
     private void InteractWithObjects(LayerMask mask, Camera cam, GameObject UI, GameObject item)
@@ -86,6 +100,46 @@ public class ItemPickup : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    private void PickupNote (LayerMask mask, Camera cam, GameObject UI, GameObject item, GameObject pictureUI)
+    {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 2, mask))
+        {
+            if (hit.collider.gameObject == item && !holdingNote)
+            {
+                UI.SetActive(true);
+            }
+        }
+
+        else
+        {
+            UI.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (Physics.Raycast(ray, out hit, 2, mask))
+            {
+                if (hit.collider.gameObject == item)
+                {
+                    holdingNote = true;
+                    UI.SetActive(false);
+                    pictureUI.SetActive(true);
+                    fpsController.enabled = false;
+                }
+            }
+        }
+
+        if (pictureUI.activeSelf && Input.GetKeyDown(KeyCode.C))
+        {
+            item.SetActive(false);
+            pictureUI.SetActive(false);
+            fpsController.enabled = true;
         }
     }
 

@@ -13,8 +13,6 @@ public class CampTransition : MonoBehaviour
     [SerializeField] GameObject turnOffFireUI;
     [SerializeField] GameObject campTransitionTrigger;
 
-    [SerializeField] GameObject binocs;
-
     [SerializeField] Transform towerTargetPosition;
     [SerializeField] GameObject goToSleepUI;
     [SerializeField] GameObject backToTowerUI;
@@ -61,7 +59,6 @@ public class CampTransition : MonoBehaviour
         {
             WrongPathTrigger.SetActive(false);
             transitionToCamp = true;
-            binocs.SetActive(false);
             darkeningEffect.SetActive(true);
             await Task.Delay(3000);
             fpsController.enabled = false;
@@ -80,7 +77,6 @@ public class CampTransition : MonoBehaviour
             canSleep = true;
             NoLeavingBarrier.SetActive(true);
             transitionToTower = true;
-            binocs.SetActive(false);
             darkeningEffect.SetActive(true);
             await Task.Delay(3000);
             backToTowerUI.SetActive(false);
