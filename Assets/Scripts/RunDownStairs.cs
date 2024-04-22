@@ -2,45 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Script made by Anton. With this script the running sound moves and starts playing that the player hears after being woken up by a knock.
+
 public class RunDownStairs : MonoBehaviour
 {
-    public Transform targetPoint1; // Reference to the first target point
-    public Transform targetPoint2; // Reference to the second target point
+    public Transform targetPoint1; 
+    public Transform targetPoint2; 
 
-    public float speed = 5f; // Speed of movement
+    public float speed = 5f; 
 
-    private Transform currentTarget; // The current target point
+    private Transform currentTarget;
 
     void Start()
     {
-        currentTarget = targetPoint1; // Start moving towards targetPoint1
+        currentTarget = targetPoint1; 
     }
+
+    //Here the empty game object with the running sound starts moving towards point 1.
 
     void Update()
     {
-        // Move towards the current target
         transform.position = Vector3.MoveTowards(transform.position, currentTarget.position, speed * Time.deltaTime);
 
-        // Check if we have reached the current target
         if (Vector3.Distance(transform.position, currentTarget.position) < 0.1f)
         {
-            // If the current target is targetPoint1, switch to targetPoint2, otherwise switch to targetPoint1
             currentTarget = (currentTarget == targetPoint1) ? targetPoint2 : targetPoint1;
         }
     }
 
-    // Collision detection
+    // Here the empty game object with the running sound starts moving towards point 2 after colliding with point 1.
+
     void OnTriggerEnter(Collider other)
     {
-        // Check if the collided object is the target point
         if (other.transform == targetPoint2)
         {
-            // Destroy the RunningSound GameObject
             Destroy(gameObject);
         }
         else if (other.transform == targetPoint1)
         {
-            // If collided with targetPoint1, switch to targetPoint2
             currentTarget = targetPoint2;
         }
     }

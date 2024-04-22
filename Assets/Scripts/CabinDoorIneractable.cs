@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Script made by Anton.
+
 public class CabinDoorInteractable : MonoBehaviour
 {
     [SerializeField] GameObject CabinDoor;

@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Script made b Anton. With this script, the player can interact with the lookout towers door.
+
 public class DoorInteractable : MonoBehaviour
 {
     [SerializeField] GameObject doorParent;
@@ -58,6 +60,8 @@ public class DoorInteractable : MonoBehaviour
         {
             UI.SetActive(false);
         }
+
+        // Player can interact with the door if the door isn't moving
 
         if (Input.GetKeyDown(KeyCode.E) && !isDoorMoving) 
         {

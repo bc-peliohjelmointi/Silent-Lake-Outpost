@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Threading.Tasks;
 using StarterAssets;
 
+// Script made by Anton. With this script the player can put out the campfire in the camp.
+
 public class PuttingOutFire : MonoBehaviour
 {
     [SerializeField] GameObject Fire;
@@ -30,6 +32,7 @@ public class PuttingOutFire : MonoBehaviour
         PutOutFire(maskFire, cam, fireUI, CampFire, Fire);
     }
 
+    // Here the player can put out the fire and when the player interacts with hhe fire, the player can't move
     private async void PutOutFire(LayerMask mask, Camera cam, GameObject UI, GameObject item, GameObject fire)
     {
         if (IsFireOn.activeSelf)
