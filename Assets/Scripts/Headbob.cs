@@ -12,7 +12,7 @@ public class Headbob : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    // starts bobbing head when running - Aleksi
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
@@ -36,6 +36,7 @@ public class Headbob : MonoBehaviour
 
     }
 
+    // Camera headbob animation activate - Aleksi
     void StartBobbing()
     {
         Camera.GetComponent<Animator>().Play("HeadBobbing");

@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    // Loads main scene - Aleksi
     public void PlayGame()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -13,12 +15,13 @@ public class MainMenu : MonoBehaviour
     }
 
 
-
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
+
+    // Quits Game - aleksi
     public void QuitGame()
     {
         Application.Quit();

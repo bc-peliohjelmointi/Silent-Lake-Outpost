@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FootSteps : MonoBehaviour
+public class FootSteps : MonoBehaviour // - Aleksi
 {
     public GameObject footstepground;
     public GameObject footstepfloor;
@@ -67,11 +67,11 @@ public class FootSteps : MonoBehaviour
                 footstepfloor.SetActive(false);
                 if (isRunning)
                 {
-                    footstepground.GetComponent<AudioSource>().pitch = 1.3f;
+                    footstepground.GetComponent<AudioSource>().pitch = 1.3f; // running speed ground
                 }
                 else
                 {
-                    footstepground.GetComponent<AudioSource>().pitch = 0.9f;
+                    footstepground.GetComponent<AudioSource>().pitch = 0.9f; // walking speed ground
                 }
             }
             else if (isFloorTagged)
@@ -80,11 +80,11 @@ public class FootSteps : MonoBehaviour
                 footstepground.SetActive(false);
                 if (isRunning)
                 {
-                    footstepfloor.GetComponent<AudioSource>().pitch = 1.7f;
+                    footstepfloor.GetComponent<AudioSource>().pitch = 1.7f; // walking speed woodfloor
                 }
                 else
                 {
-                    footstepfloor.GetComponent<AudioSource>().pitch = 1.2f;
+                    footstepfloor.GetComponent<AudioSource>().pitch = 1.2f; // walking speed wood floor
                 }
             }
         }
@@ -95,7 +95,7 @@ public class FootSteps : MonoBehaviour
         }
     }
 
-    void CheckGroundTags()
+    void CheckGroundTags() // Change from wood to ground footstep
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, 1f))

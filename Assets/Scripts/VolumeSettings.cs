@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class VolumeSettings : MonoBehaviour
 {
+
+    // pause menu volume slider - Aleksi
     [SerializeField] private AudioMixer myMixer;
     [SerializeField] private Slider volumeSlider;
 

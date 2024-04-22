@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bringup : MonoBehaviour
+public class Bringup : MonoBehaviour // - Aleksi
 {
     public GameObject setting;
     public bool issettingactive;
-    public MouseLook mouseLookScript; // Reference to the MouseLook script
 
     [SerializeField] GameObject flashLight;
     [SerializeField] GameObject binoculars;
@@ -16,11 +15,10 @@ public class Bringup : MonoBehaviour
 
     void Start()
     {
-        // Assign the MouseLook script reference
-        mouseLookScript = GetComponent<MouseLook>();
+        
     }
 
-    void Update()
+    void Update() // Esc to activate pausemenu
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -35,25 +33,23 @@ public class Bringup : MonoBehaviour
         }
     }
 
-    public void Pause()
+    public void Pause() //Pause menu active
     {
         setting.SetActive(true);
         issettingactive = true;
-        mouseLookScript.SetLookingEnabled(false); // Disable looking
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true; // Ensure cursor is visible when pause menu is active
+        Cursor.visible = true; 
         flashLight.SetActive(false);
         binoculars.SetActive(false);
         isPaused = true;
     }
 
-    public void Resume()
+    public void Resume() //  Resume game
     {
         setting.SetActive(false);
         issettingactive = false;
-        mouseLookScript.SetLookingEnabled(true); // Enable looking
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false; // Ensure cursor is hidden when pause menu is inactive
+        Cursor.visible = false; 
         isPaused = false;
     }
 }
