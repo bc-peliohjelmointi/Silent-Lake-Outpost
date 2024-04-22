@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
+/// <summary>
+/// This class is made by Leevi. It's purpose if to 
+/// </summary>
 public class ShowItem : MonoBehaviour
 {
     [SerializeField] GameObject propBinocs;
@@ -31,6 +35,10 @@ public class ShowItem : MonoBehaviour
         binocScript = GetComponent<Binoculars>();
     }
 
+
+    /// <summary>
+    /// Calling the different methods whenever needed.
+    /// </summary>
     private void Update()
     {
         if(!darkening.activeSelf && !note.activeSelf)
@@ -52,6 +60,9 @@ public class ShowItem : MonoBehaviour
     }
 
 
+    /// <summary>
+    /// used to handle the flashlights lightsource and soundeffect whenever player turns on the flashlight
+    /// </summary>
     void FlashLightOn()
     {
         if (flashLight.activeSelf && !flashLightSpotLight.enabled && Input.GetKeyDown(KeyCode.Mouse0))
@@ -76,6 +87,9 @@ public class ShowItem : MonoBehaviour
     }
 
 
+    /// <summary>
+    /// Used for bringing up the flashlight and hiding it by pressing the key "F"
+    /// </summary>
     void FlashLightShow()
     {
 
@@ -111,7 +125,9 @@ public class ShowItem : MonoBehaviour
     }
 
 
-
+    /// <summary>
+    /// Used for bringing up the binoculars and hiding the by the key "B"
+    /// </summary>
     void BinocularsShow()
     {
 

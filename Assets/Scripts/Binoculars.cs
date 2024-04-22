@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+
+/// <summary>
+/// This class is made by Leevi. It handles everything to do with the binoculars. Zooming and drawing the zoom GUI image
+/// </summary>
 public class Binoculars : MonoBehaviour
 {
     [SerializeField] CinemachineVirtualCamera _virtualCamera;
@@ -30,6 +34,9 @@ public class Binoculars : MonoBehaviour
         pauseScript = GetComponent<Bringup>();
     }
 
+    /// <summary>
+    /// Using this to check if player is spotting the campfire with the binoculars and unzooming when player isn't zoomed
+    /// </summary>
     private void Update()
     {
         CheckZoom();
@@ -49,6 +56,9 @@ public class Binoculars : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Checking if the playr is zooming
+    /// </summary>
     void CheckZoom()
     {
         if (binoculars.activeSelf && Input.GetKeyDown(KeyCode.Mouse0))
@@ -82,6 +92,9 @@ public class Binoculars : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Drawing the GUI image whenever the player is zooming
+    /// </summary>
     void OnGUI()
     {
         if (isZoomed && pauseScript.isPaused == false)
@@ -93,6 +106,9 @@ public class Binoculars : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Adjusting the FOV of the player when zooming via Scroll Wheel
+    /// </summary>
     void ScrollWheelZoom()
     {
         float scrollWheelInput = Input.GetAxis("Mouse ScrollWheel");

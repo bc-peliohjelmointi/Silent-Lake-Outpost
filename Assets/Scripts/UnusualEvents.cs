@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/// <summary>
+/// This script is made my Leevi. It is used for spotting unusual stuff such as human meat around the campfire.
+/// </summary>
 public class UnusualEvents : MonoBehaviour
 {
     Camera cam;
@@ -30,6 +33,9 @@ public class UnusualEvents : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Used for when the player spots the human meat near the campfire
+    /// </summary>
     public void SpottingMeat()
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);

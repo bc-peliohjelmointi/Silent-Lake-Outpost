@@ -4,6 +4,10 @@ using UnityEngine;
 using System.Threading.Tasks;
 using StarterAssets;
 
+
+/// <summary>
+/// This script is made by Leevi. It handles the transitions between places.
+/// </summary>
 public class CampTransition : MonoBehaviour
 {
     [SerializeField] GameObject darkeningEffect;
@@ -31,6 +35,10 @@ public class CampTransition : MonoBehaviour
         fpsController = GetComponent<FirstPersonController>();
     }
 
+
+    /// <summary>
+    /// Made for transforming the player position to while the black screen fade effect is active and playercontroller is inactive
+    /// </summary>
     private void Update()
     {
         if (!fpsController.enabled && darkeningEffect.activeSelf)
@@ -53,6 +61,9 @@ public class CampTransition : MonoBehaviour
         DisableFootsteps();
     }
 
+    /// <summary>
+    /// Activating the black screen transition effect when touching the triggers in the scene
+    /// </summary>
     private async void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("ToCampTransition"))
@@ -91,6 +102,9 @@ public class CampTransition : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Disabling footsteps whenever the black screen fade effect is active
+    /// </summary>
     private void DisableFootsteps()
     {
         if(darkeningEffect.activeSelf)
@@ -104,6 +118,9 @@ public class CampTransition : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// These methods below are used for Invokes at some point when needed
+    /// </summary>
     private void TurnOffUIPrompt()
     {
         turnOffFireUI.SetActive(false);

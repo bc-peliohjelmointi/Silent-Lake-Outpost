@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 using System.Threading.Tasks;
 using StarterAssets;
 using System.Security.Cryptography;
 
-
+/// <summary>
+/// This class is made by Leevi. It is usef for tasks that the player will have to do in order to advance in the story. Such as spotting the campfire for example.
+/// Anton put the running sound of the cannibal and generator sound variables in this script
+/// </summary>
 public class Tasks : MonoBehaviour
 {
     // variables for generator mission
@@ -72,6 +74,7 @@ public class Tasks : MonoBehaviour
     public bool hasSeenCamp = false;
     private bool hasSlept = false;
 
+    // reference to other script for uses of their variables
     CampTransition campTransitionScript;
     FirstPersonController fpsController;
     DoorInteractable doorScript;
@@ -111,6 +114,7 @@ public class Tasks : MonoBehaviour
         }
     }
 
+    // raycasting method used for scouting out the campfire with binoculars
     public void SpotFire()
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -133,11 +137,7 @@ public class Tasks : MonoBehaviour
         }
     }
 
-    private void DelayFirstDialogue()
-    {
-        selfDialogueUI.SetActive(true);
-    }
-
+    // This method is used when the player is turning on the generator downstairs
     private void TurnOnGenerator(LayerMask mask, Camera cam, GameObject UI, GameObject item)
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -178,6 +178,8 @@ public class Tasks : MonoBehaviour
         }
     }
 
+
+    // Method for sleeping used later on in the game
     private async void Sleeping(LayerMask mask, Camera cam, GameObject UI, GameObject item)
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -237,6 +239,8 @@ public class Tasks : MonoBehaviour
         }
     }
 
+
+    // Used for interacting with the radio
     private void RadioContact(LayerMask mask, Camera cam, GameObject UI, GameObject item)
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -272,6 +276,7 @@ public class Tasks : MonoBehaviour
         }
     }
 
+    // Used for the jumpscare hanging arm left by the cannibal enemy infront of the tower door
     private void LookAtArm(LayerMask mask, Camera cam, GameObject UI, GameObject item)
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -291,6 +296,7 @@ public class Tasks : MonoBehaviour
         }
     }
 
+    // Jumpscare after waking up from sleep and opening the door
     private void FallingHandJumpscare()
     {
         if(doorScript.isDoorOpening)
@@ -302,6 +308,8 @@ public class Tasks : MonoBehaviour
         }
     }
 
+
+    // These methods below are used for Invoking them at some point in need. 
     private void ArmJumpscareSound()
     {
         armJumpscare.enabled = true;
@@ -350,6 +358,11 @@ public class Tasks : MonoBehaviour
     private void LookoutTaskDialogue()
     {
         lookoutDialogueUI.SetActive(true);
+    }
+
+    private void DelayFirstDialogue()
+    {
+        selfDialogueUI.SetActive(true);
     }
 
     private void DisableSpotFireText()

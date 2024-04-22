@@ -5,6 +5,9 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This script is made by Leevi. It's purpose is to handle item pickups. Example: Picking up flashlight and binoculars
+/// </summary>
 public class ItemPickup : MonoBehaviour
 {
     [SerializeField] LayerMask mask1;
@@ -42,6 +45,9 @@ public class ItemPickup : MonoBehaviour
         fpsController = GetComponent<FirstPersonController>();
     }
 
+    /// <summary>
+    /// Calling different methods
+    /// </summary>
     private void Update()
     {
         if(taskScript.canPickUpBinocs)
@@ -53,6 +59,9 @@ public class ItemPickup : MonoBehaviour
         PickupNote(noteLayer, cam, noteUI, note, noteImageUI);
     }
 
+    /// <summary>
+    /// Used for picking up the 2 important items (Flashlight and binoculars);
+    /// </summary>
     private void InteractWithObjects(LayerMask mask, Camera cam, GameObject UI, GameObject item)
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -103,6 +112,9 @@ public class ItemPickup : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Picking up the scary note left by the cannibal
+    /// </summary>
     private void PickupNote (LayerMask mask, Camera cam, GameObject UI, GameObject item, GameObject pictureUI)
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
