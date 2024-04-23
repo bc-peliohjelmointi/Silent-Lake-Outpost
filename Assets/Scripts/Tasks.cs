@@ -65,6 +65,7 @@ public class Tasks : MonoBehaviour
     [SerializeField] AudioSource radioNoise;
     [SerializeField] GameObject radioNotWorkingDialogue;
     [SerializeField] GameObject useRadioUI;
+    [SerializeField] GameObject hikeToCabinUI;
     private bool canUseRadio = false;
 
     Camera cam;
@@ -209,6 +210,7 @@ public class Tasks : MonoBehaviour
                 {
                     if (!doorScript.DoorOpen.activeSelf)
                     {
+                        scoutingBarrier.SetActive(true);
                         closeDoorText.SetActive(false);
                         hasSlept = true;
                         fpsController.enabled = false;
@@ -265,11 +267,13 @@ public class Tasks : MonoBehaviour
             {
                 if (hit.collider.gameObject == item)
                 {
+                    scoutingBarrier.SetActive(false);
                     UI.SetActive(false);
                     radioNoise.enabled = true;
                     Invoke("TurnOnRadioNotWorking", 1f);
                     radioDialogue.SetActive(false);
                     Invoke("TurnOffRadioNotWorkingUI", 5f);
+                    Invoke("HikeToCampDialogue", 7f);
                     canUseRadio = false;
                 }
             }
@@ -290,7 +294,7 @@ public class Tasks : MonoBehaviour
                 UI.SetActive(true);
                 Invoke("TurnOffArmUI", 5f);
                 Invoke("RadioContactUI", 5.5f);
-                Invoke("TurnOffContactUI", 9f);
+                Invoke("TurnOffContactUI", 20f);
                 canUseRadio = true;
             }
         }
@@ -358,6 +362,11 @@ public class Tasks : MonoBehaviour
     private void LookoutTaskDialogue()
     {
         lookoutDialogueUI.SetActive(true);
+    }
+
+    private void HikeToCampDialogue()
+    {
+        hikeToCabinUI.SetActive(true);
     }
 
     private void DelayFirstDialogue()
