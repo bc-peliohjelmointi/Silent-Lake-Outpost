@@ -267,6 +267,7 @@ public class Tasks : MonoBehaviour
             {
                 if (hit.collider.gameObject == item)
                 {
+                    seenArmUI.SetActive(false);
                     scoutingBarrier.SetActive(false);
                     UI.SetActive(false);
                     radioNoise.enabled = true;
@@ -335,7 +336,10 @@ public class Tasks : MonoBehaviour
 
     private void RadioContactUI()
     {
-        radioDialogue.SetActive(true);
+        if(canUseRadio)
+        {
+            radioDialogue.SetActive(true);
+        }
     }
 
     private void TurnOffContactUI()
