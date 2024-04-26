@@ -70,6 +70,8 @@ public class Tasks : MonoBehaviour
 
     Camera cam;
 
+    [SerializeField] GameObject cabinTransitionTriggers;
+
     private bool isTurnedOn = false;
     public bool canPickUpBinocs = false;
     public bool hasSeenCamp = false;
@@ -267,6 +269,7 @@ public class Tasks : MonoBehaviour
             {
                 if (hit.collider.gameObject == item)
                 {
+                    cabinTransitionTriggers.SetActive(true);
                     seenArmUI.SetActive(false);
                     scoutingBarrier.SetActive(false);
                     UI.SetActive(false);

@@ -10,6 +10,7 @@ using StarterAssets;
 /// </summary>
 public class CampTransition : MonoBehaviour
 {
+    // variables for camp transition
     [SerializeField] GameObject darkeningEffect;
     [SerializeField] Transform targetPosition;
     FirstPersonController fpsController;
@@ -17,16 +18,22 @@ public class CampTransition : MonoBehaviour
     [SerializeField] GameObject turnOffFireUI;
     [SerializeField] GameObject campTransitionTrigger;
 
+    // variables for back to tower transition
     [SerializeField] Transform towerTargetPosition;
     [SerializeField] GameObject goToSleepUI;
     [SerializeField] GameObject backToTowerUI;
     [SerializeField] GameObject NoLeavingBarrier;
     [SerializeField] GameObject WrongPathTrigger;
 
+    // variables for cabin transition
+    [SerializeField] Transform cabinTargetPosition;
+    [SerializeField] GameObject hikeToCabinDialogue;
+
     [SerializeField] GameObject footSteps;
 
     private bool transitionToCamp = false;
     private bool transitionToTower = false;
+    private bool transitionToCabin = false;
 
     public bool canSleep = false;
 
@@ -54,6 +61,13 @@ public class CampTransition : MonoBehaviour
             {
                 transform.position = towerTargetPosition.position;
                 transform.rotation = towerTargetPosition.rotation;
+                playerCameraRoot.SetActive(false);
+            }
+
+            else if (transitionToCabin)
+            {
+                transform.position = cabinTargetPosition.position;
+                transform.rotation = cabinTargetPosition.rotation;
                 playerCameraRoot.SetActive(false);
             }
         }
@@ -99,6 +113,20 @@ public class CampTransition : MonoBehaviour
             darkeningEffect.SetActive(false);
             Invoke("TurnOnSleepUI", 3f);
             Invoke("TurnOffSleepUI", 8f);
+        }
+
+        else if (other.CompareTag("ToCabinTransition"))
+        {
+            transitionToCabin = true;
+            darkeningEffect.SetActive(true);
+            await Task.Delay(3000);
+            hikeToCabinDialogue.SetActive(false);
+            fpsController.enabled = false;
+            await Task.Delay(4000);
+            transitionToCabin = false;
+            fpsController.enabled = true;
+            playerCameraRoot.SetActive(true);
+            darkeningEffect.SetActive(false);
         }
     }
 

@@ -13,6 +13,7 @@ TagManager:
   - WrongPathBarrier
   - ToTowerTransition
   - InsideTrigger
+  - ToCabinTransition
   layers:
   - Default
   - TransparentFX
