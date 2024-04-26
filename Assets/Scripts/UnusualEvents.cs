@@ -18,6 +18,10 @@ public class UnusualEvents : MonoBehaviour
     [SerializeField] LayerMask meatMask;
     [SerializeField] GameObject meat;
 
+    // variables for dropping dead body jumpscare
+    [SerializeField] GameObject deadbodyTrigger;
+    [SerializeField] GameObject deadbody;
+
     private bool hasSeenMeat = false;
 
 
@@ -50,6 +54,19 @@ public class UnusualEvents : MonoBehaviour
                 spottedMeatUI.SetActive(true);
                 Invoke("TurnOffSpotMeatUI", 3f);
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("CabinTrigger"))
+        {
+            deadbodyTrigger.SetActive(true);
+        }
+
+        else if (other.CompareTag("DeadbodyTrigger"))
+        {
+            deadbody.SetActive(true);
         }
     }
 
