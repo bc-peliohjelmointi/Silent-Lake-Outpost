@@ -21,13 +21,18 @@ public class UnusualEvents : MonoBehaviour
     // variables for dropping dead body jumpscare
     [SerializeField] GameObject deadbodyTrigger;
     [SerializeField] GameObject deadbody;
+    [SerializeField] GameObject cabinBarrier;
+    [SerializeField] AudioSource jumpscareSound;
 
     private bool hasSeenMeat = false;
+
+    CabinDoorInteractable cabinDoorScript;
 
 
     private void Start()
     {
         cam = Camera.main;
+        cabinDoorScript = GetComponent<CabinDoorInteractable>();
     }
     private void Update()
     {
@@ -62,11 +67,14 @@ public class UnusualEvents : MonoBehaviour
         if (other.CompareTag("CabinTrigger"))
         {
             deadbodyTrigger.SetActive(true);
+            cabinBarrier.SetActive(true);
         }
 
-        else if (other.CompareTag("DeadbodyTrigger"))
+        else if (other.CompareTag("DeadbodyTrigger") && cabinDoorScript.CabinDoorOpen.activeSelf || cabinDoorScript.isDoorOpening)
         {
             deadbody.SetActive(true);
+            Invoke("JumpscareSound", 1f);
+            Invoke("DisableCabinBarrier", 3f);
         }
     }
 
@@ -74,5 +82,15 @@ public class UnusualEvents : MonoBehaviour
     {
         spottedMeatUI.SetActive(false);
         hasSeenMeat = true;
+    }
+
+    private void DisableCabinBarrier()
+    {
+        cabinBarrier.SetActive(false);
+    }
+
+    private void JumpscareSound()
+    {
+        jumpscareSound.enabled = true;
     }
 }

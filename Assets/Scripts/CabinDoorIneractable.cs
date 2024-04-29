@@ -11,7 +11,7 @@ public class CabinDoorInteractable : MonoBehaviour
     public GameObject CabinDoorOpen;
 
     Camera cam;
-    bool isDoorOpening = false;
+    public bool isDoorOpening = false;
     bool isDoorMoving = false;
     float smoothTime = 4f;
 
