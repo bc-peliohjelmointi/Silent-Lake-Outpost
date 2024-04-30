@@ -28,6 +28,7 @@ public class CampTransition : MonoBehaviour
     // variables for cabin transition
     [SerializeField] Transform cabinTargetPosition;
     [SerializeField] GameObject hikeToCabinDialogue;
+    [SerializeField] GameObject arrivedAtCabinDialogue;
 
     [SerializeField] GameObject footSteps;
 
@@ -127,6 +128,8 @@ public class CampTransition : MonoBehaviour
             fpsController.enabled = true;
             playerCameraRoot.SetActive(true);
             darkeningEffect.SetActive(false);
+            Invoke("ArrivedAtCabin", 5f);
+            Invoke("TurnOffArriveDialogue", 10f);
         }
     }
 
@@ -161,5 +164,15 @@ public class CampTransition : MonoBehaviour
     private void TurnOffSleepUI()
     {
         goToSleepUI.SetActive(false);
+    }
+
+    private void ArrivedAtCabin()
+    {
+        arrivedAtCabinDialogue.SetActive(true);
+    }
+
+    private void TurnOffArriveDialogue()
+    {
+        arrivedAtCabinDialogue.SetActive(false);
     }
 }

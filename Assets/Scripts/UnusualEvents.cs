@@ -26,13 +26,9 @@ public class UnusualEvents : MonoBehaviour
 
     private bool hasSeenMeat = false;
 
-    CabinDoorInteractable cabinDoorScript;
-
-
     private void Start()
     {
         cam = Camera.main;
-        cabinDoorScript = GetComponent<CabinDoorInteractable>();
     }
     private void Update()
     {
@@ -70,10 +66,10 @@ public class UnusualEvents : MonoBehaviour
             cabinBarrier.SetActive(true);
         }
 
-        else if (other.CompareTag("DeadbodyTrigger") && cabinDoorScript.CabinDoorOpen.activeSelf || cabinDoorScript.isDoorOpening)
+        else if (other.CompareTag("DeadbodyTrigger"))
         {
             deadbody.SetActive(true);
-            Invoke("JumpscareSound", 1f);
+            Invoke("JumpscareSound", 0.8f);
             Invoke("DisableCabinBarrier", 3f);
         }
     }
