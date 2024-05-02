@@ -276,8 +276,8 @@ public class Tasks : MonoBehaviour
                     radioNoise.enabled = true;
                     Invoke("TurnOnRadioNotWorking", 1f);
                     radioDialogue.SetActive(false);
-                    Invoke("TurnOffRadioNotWorkingUI", 5f);
-                    Invoke("HikeToCampDialogue", 7f);
+                    Invoke("TurnOffRadioNotWorkingUI", 8f);
+                    Invoke("HikeToCampDialogue", 10f);
                     canUseRadio = false;
                 }
             }

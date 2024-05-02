@@ -24,17 +24,27 @@ public class UnusualEvents : MonoBehaviour
     [SerializeField] GameObject cabinBarrier;
     [SerializeField] AudioSource jumpscareSound;
 
+    [SerializeField] GameObject backToTowerDialogue;
+
     private bool hasSeenMeat = false;
 
+    ItemPickup itempickupScript;
     private void Start()
     {
         cam = Camera.main;
+        itempickupScript = GetComponent<ItemPickup>();
     }
     private void Update()
     {
         if(!hasSeenMeat)
         {
             SpottingMeat();
+        }
+
+        if (itempickupScript.jumpscareReady)
+        {
+            deadbodyTrigger.SetActive(true);
+            cabinBarrier.SetActive(true);
         }
     }
 
@@ -60,15 +70,10 @@ public class UnusualEvents : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("CabinTrigger"))
-        {
-            deadbodyTrigger.SetActive(true);
-            cabinBarrier.SetActive(true);
-        }
-
-        else if (other.CompareTag("DeadbodyTrigger"))
+        if (other.CompareTag("DeadbodyTrigger"))
         {
             deadbody.SetActive(true);
+            backToTowerDialogue.SetActive(false);
             Invoke("JumpscareSound", 0.8f);
             Invoke("DisableCabinBarrier", 3f);
         }

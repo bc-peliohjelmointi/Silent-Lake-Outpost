@@ -34,6 +34,14 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] GameObject noteImageUI;
     private bool holdingNote = false;
 
+    // variables for battery pickup 
+    [SerializeField] LayerMask batteryLayer;
+    [SerializeField] GameObject batteryUI;
+    [SerializeField] GameObject battery1;
+    [SerializeField] GameObject battery2;
+    public bool jumpscareReady = false;
+    [SerializeField] GameObject backToTowerDialogue;
+
 
     Tasks taskScript;
     FirstPersonController fpsController;
@@ -57,6 +65,14 @@ public class ItemPickup : MonoBehaviour
         InteractWithObjects(mask2, cam, pickupFlashUI, propFlashlight);
 
         PickupNote(noteLayer, cam, noteUI, note, noteImageUI);
+
+        PickupBatteries(batteryLayer, cam, batteryUI, battery1);
+        PickupBatteries(batteryLayer, cam, batteryUI, battery2);
+
+        if(!battery1.activeSelf &&  !battery2.activeSelf)
+        {
+            Invoke("BackToTowerDialogue", 1f);
+        }
     }
 
     /// <summary>
@@ -153,6 +169,42 @@ public class ItemPickup : MonoBehaviour
             pictureUI.SetActive(false);
             fpsController.enabled = true;
         }
+    }
+
+    private void PickupBatteries(LayerMask mask, Camera cam, GameObject UI, GameObject item)
+    {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 2, mask))
+        {
+            if (hit.collider.gameObject == item)
+            {
+                UI.SetActive(true);
+            }
+        }
+
+        else
+        {
+            UI.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (Physics.Raycast(ray, out hit, 2, mask))
+            {
+                if (hit.collider.gameObject == item)
+                {
+                    item.SetActive(false);
+                    jumpscareReady = true;
+                }
+            }
+        }
+    }
+
+    private void BackToTowerDialogue()
+    {
+        backToTowerDialogue.SetActive(true);
     }
 
     private void TurnOffFlashlightInstructions()
