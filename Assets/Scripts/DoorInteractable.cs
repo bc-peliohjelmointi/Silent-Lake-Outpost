@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 // Script made b Anton. With this script, the player can interact with the lookout towers door.
@@ -7,6 +8,10 @@ public class DoorInteractable : MonoBehaviour
     [SerializeField] GameObject doorParent;
     [SerializeField] GameObject doorUI;
     [SerializeField] LayerMask maskDoor;
+
+    [SerializeField] AudioSource DoorOpeningSound;
+    [SerializeField] AudioSource DoorClosingSound;
+
 
     public GameObject DoorOpen;
 
@@ -71,11 +76,15 @@ public class DoorInteractable : MonoBehaviour
                 {
                     targetRotation = Quaternion.Euler(0, -90, 0) * doorParent.transform.rotation;
                     DoorOpen.SetActive(false);
+                    Invoke("DoorCloseSound", 1f);
+                    DoorOpeningSound.enabled = false;
                 }
                 else
                 {
+                    DoorOpeningSound.enabled = true;
                     targetRotation = Quaternion.Euler(0, 90, 0) * doorParent.transform.rotation;
                     DoorOpen.SetActive(true);
+                    DoorClosingSound.enabled = false;
                 }
                 isDoorOpening = true;
                 isDoorMoving = true; 
@@ -94,6 +103,11 @@ public class DoorInteractable : MonoBehaviour
         {
             cricketSounds.volume = 0.5f;
         }
+    }
+
+    private void DoorCloseSound()
+    {
+        DoorClosingSound.enabled = true;
     }
 }
 
