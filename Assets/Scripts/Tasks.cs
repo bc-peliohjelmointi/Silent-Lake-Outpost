@@ -298,7 +298,6 @@ public class Tasks : MonoBehaviour
                 UI.SetActive(true);
                 Invoke("TurnOffArmUI", 5f);
                 Invoke("RadioContactUI", 5.5f);
-                Invoke("TurnOffContactUI", 20f);
                 canUseRadio = true;
             }
         }
@@ -343,11 +342,6 @@ public class Tasks : MonoBehaviour
         {
             radioDialogue.SetActive(true);
         }
-    }
-
-    private void TurnOffContactUI()
-    {
-        radioDialogue.SetActive(false);
     }
 
     private void TurnOffKnockingDialogue()

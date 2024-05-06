@@ -71,6 +71,7 @@ public class ItemPickup : MonoBehaviour
 
         if(!battery1.activeSelf &&  !battery2.activeSelf)
         {
+            jumpscareReady = true;
             Invoke("BackToTowerDialogue", 1f);
         }
     }
@@ -196,7 +197,6 @@ public class ItemPickup : MonoBehaviour
                 if (hit.collider.gameObject == item)
                 {
                     item.SetActive(false);
-                    jumpscareReady = true;
                 }
             }
         }
