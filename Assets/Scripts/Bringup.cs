@@ -85,7 +85,7 @@ public class Bringup : MonoBehaviour // - Aleksi
         isPaused = false;
 
         if (footstepScript != null)
-            footstepScript.enabled = false;
+            footstepScript.enabled = true;
 
         if (headBobbingScript != null)
             headBobbingScript.enabled = true;
