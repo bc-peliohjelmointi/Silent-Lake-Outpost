@@ -6,32 +6,30 @@ using StarterAssets;
 public class Bringup : MonoBehaviour // - Aleksi
 {
     public GameObject setting;
+    public GameObject PlayerCameraRoot;
     public bool issettingactive;
+
+    public GameObject footstepground;
+    public GameObject footstepfloor;
+
+
     private FirstPersonController firstPersonController;
 
     private Animator playerAnimator;
     private Headbob headBobbingScript;
     private FootSteps footstepScript;
 
-
-
-
     [SerializeField] GameObject flashLight;
     [SerializeField] GameObject binoculars;
 
     public bool isPaused = false;
 
-
     void Start()
     {
         firstPersonController = GetComponent<FirstPersonController>();
-
         playerAnimator = GetComponent<Animator>();
-
         headBobbingScript = GetComponent<Headbob>();
-
         footstepScript = GetComponent<FootSteps>();
-
     }
 
     void Update() // Esc to activate pausemenu
@@ -65,6 +63,12 @@ public class Bringup : MonoBehaviour // - Aleksi
         binoculars.SetActive(false);
         isPaused = true;
 
+        if (footstepground != null)
+            footstepground.SetActive(false);
+
+        if (footstepfloor != null)
+            footstepfloor.SetActive(false);
+
         if (footstepScript != null)
             footstepScript.enabled = false;
 
@@ -73,6 +77,9 @@ public class Bringup : MonoBehaviour // - Aleksi
 
         if (playerAnimator != null)
             playerAnimator.enabled = false;
+
+        if (PlayerCameraRoot != null)
+            PlayerCameraRoot.SetActive(false); 
     }
 
     public void Resume() //  Resume game
@@ -84,6 +91,12 @@ public class Bringup : MonoBehaviour // - Aleksi
         Cursor.visible = false;
         isPaused = false;
 
+        if (footstepground != null)
+            footstepground.SetActive(true);
+
+        if (footstepfloor != null)
+            footstepfloor.SetActive(true);
+
         if (footstepScript != null)
             footstepScript.enabled = true;
 
@@ -92,5 +105,8 @@ public class Bringup : MonoBehaviour // - Aleksi
 
         if (playerAnimator != null)
             playerAnimator.enabled = true;
+
+        if (PlayerCameraRoot != null)
+            PlayerCameraRoot.SetActive(true); 
     }
 }

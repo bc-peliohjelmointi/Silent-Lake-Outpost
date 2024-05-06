@@ -1157,7 +1157,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setting: {fileID: 230848223}
+  PlayerCameraRoot: {fileID: 1791514339}
   issettingactive: 0
+  footstepground: {fileID: 269827607}
+  footstepfloor: {fileID: 534232272}
   flashLight: {fileID: 1733134195}
   binoculars: {fileID: 600527527}
   isPaused: 0
