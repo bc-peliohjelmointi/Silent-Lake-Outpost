@@ -11,6 +11,8 @@ public class Bringup : MonoBehaviour // - Aleksi
 
     private Animator playerAnimator;
     private Headbob headBobbingScript;
+    private FootSteps footstepScript;
+
 
 
 
@@ -27,6 +29,8 @@ public class Bringup : MonoBehaviour // - Aleksi
         playerAnimator = GetComponent<Animator>();
 
         headBobbingScript = GetComponent<Headbob>();
+
+        footstepScript = GetComponent<FootSteps>();
 
     }
 
@@ -61,6 +65,9 @@ public class Bringup : MonoBehaviour // - Aleksi
         binoculars.SetActive(false);
         isPaused = true;
 
+        if (footstepScript != null)
+            footstepScript.enabled = false;
+
         if (headBobbingScript != null)
             headBobbingScript.enabled = false;
 
@@ -76,6 +83,9 @@ public class Bringup : MonoBehaviour // - Aleksi
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         isPaused = false;
+
+        if (footstepScript != null)
+            footstepScript.enabled = false;
 
         if (headBobbingScript != null)
             headBobbingScript.enabled = true;
