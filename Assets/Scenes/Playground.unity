@@ -954,7 +954,6 @@ GameObject:
   - component: {fileID: 218227529}
   - component: {fileID: 218227528}
   - component: {fileID: 218227535}
-  - component: {fileID: 218227537}
   - component: {fileID: 218227536}
   - component: {fileID: 218227538}
   m_Layer: 0
@@ -1162,20 +1161,6 @@ MonoBehaviour:
   flashLight: {fileID: 1733134195}
   binoculars: {fileID: 600527527}
   isPaused: 0
---- !u!114 &218227537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218227527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eb5ec8d9240f3842ad159dbb2a2a70e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1050511643}
-  playerBody: {fileID: 218227534}
 --- !u!114 &218227538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5023,7 +5008,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 218227537}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
         m_MethodName: AdjustSpeed
         m_Mode: 4
