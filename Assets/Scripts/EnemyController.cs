@@ -17,6 +17,9 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Player died!");
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player died!");
+        }
     }
 }
