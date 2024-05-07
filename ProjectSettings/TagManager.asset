@@ -16,6 +16,7 @@ TagManager:
   - ToCabinTransition
   - CabinTrigger
   - DeadbodyTrigger
+  - FromCabinToTowerPosition
   layers:
   - Default
   - TransparentFX

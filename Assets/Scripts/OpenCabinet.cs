@@ -17,6 +17,11 @@ public class OpenCabinet : MonoBehaviour
 
     Vector3 targetPosition;
 
+    [SerializeField] CapsuleCollider battery1Collider;
+    [SerializeField] CapsuleCollider battery2Collider;
+
+
+
     private void Start()
     {
         cam = Camera.main;
@@ -66,10 +71,14 @@ public class OpenCabinet : MonoBehaviour
                 {
                     targetPosition = Cabinet.transform.position + new Vector3(-0.5f, 0, 0);
                     CabinetOpen.SetActive(false);
+                    battery1Collider.enabled = false;
+                    battery2Collider.enabled = false;
                 }
                 else
                 {
                     targetPosition = Cabinet.transform.position + new Vector3(0.5f, 0, 0);
+                    battery1Collider.enabled = true;
+                    battery2Collider.enabled = true;
                     CabinetOpen.SetActive(true);
                 }
                 isDoorOpening = true;

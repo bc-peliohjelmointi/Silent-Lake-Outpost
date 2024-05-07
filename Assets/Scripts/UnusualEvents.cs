@@ -44,7 +44,6 @@ public class UnusualEvents : MonoBehaviour
         if (itempickupScript.jumpscareReady)
         {
             deadbodyTrigger.SetActive(true);
-            cabinBarrier.SetActive(true);
         }
     }
 
@@ -72,6 +71,7 @@ public class UnusualEvents : MonoBehaviour
     {
         if (other.CompareTag("DeadbodyTrigger"))
         {
+            cabinBarrier.SetActive(true);
             deadbody.SetActive(true);
             backToTowerDialogue.SetActive(false);
             Invoke("JumpscareSound", 0.8f);

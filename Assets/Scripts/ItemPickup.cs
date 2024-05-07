@@ -41,6 +41,7 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] GameObject battery2;
     public bool jumpscareReady = false;
     [SerializeField] GameObject backToTowerDialogue;
+    [SerializeField] GameObject towerTransitionTrigger;
 
 
     Tasks taskScript;
@@ -69,10 +70,11 @@ public class ItemPickup : MonoBehaviour
         PickupBatteries(batteryLayer, cam, batteryUI, battery1);
         PickupBatteries(batteryLayer, cam, batteryUI, battery2);
 
-        if(!battery1.activeSelf &&  !battery2.activeSelf)
+        if(!battery1.activeSelf && !battery2.activeSelf)
         {
             jumpscareReady = true;
             Invoke("BackToTowerDialogue", 1f);
+            towerTransitionTrigger.SetActive(true);
         }
     }
 

@@ -30,11 +30,16 @@ public class CampTransition : MonoBehaviour
     [SerializeField] GameObject hikeToCabinDialogue;
     [SerializeField] GameObject arrivedAtCabinDialogue;
 
+    // variables for leaving cabin to tower transition
+    [SerializeField] Transform cabinToTowerPosition;
+    [SerializeField] GameObject batteryDialogue;
+
     [SerializeField] GameObject footSteps;
 
     private bool transitionToCamp = false;
     private bool transitionToTower = false;
     private bool transitionToCabin = false;
+    private bool fromCabinToTower = false;
 
     public bool canSleep = false;
 
@@ -69,6 +74,13 @@ public class CampTransition : MonoBehaviour
             {
                 transform.position = cabinTargetPosition.position;
                 transform.rotation = cabinTargetPosition.rotation;
+                playerCameraRoot.SetActive(false);
+            }
+
+            else if(fromCabinToTower)
+            {
+                transform.position = cabinToTowerPosition.position;
+                transform.rotation = cabinToTowerPosition.rotation;
                 playerCameraRoot.SetActive(false);
             }
         }
@@ -130,6 +142,20 @@ public class CampTransition : MonoBehaviour
             darkeningEffect.SetActive(false);
             Invoke("ArrivedAtCabin", 5f);
             Invoke("TurnOffArriveDialogue", 10f);
+        }
+
+        else if (other.CompareTag("FromCabinToTowerPosition"))
+        {
+            batteryDialogue.SetActive(false);
+            fromCabinToTower = true;
+            darkeningEffect.SetActive(true);
+            await Task.Delay(3000);
+            fpsController.enabled = false;
+            await Task.Delay(4000);
+            fromCabinToTower = false;
+            fpsController.enabled = true;
+            playerCameraRoot.SetActive(true);
+            darkeningEffect.SetActive(false);
         }
     }
 
