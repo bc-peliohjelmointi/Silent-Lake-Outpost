@@ -100,7 +100,7 @@ public class Tasks : MonoBehaviour
             TurnOnGenerator(maskGenerator, cam, generatorUI, generator);
         }
 
-        if (campTransitionScript.canSleep && !hasSlept)
+        if (campTransitionScript.canSleep && !hasSlept && doorScript.isInside)
         {
             Sleeping(maskBed, cam, goToSleepUI, bed);
         }
@@ -231,6 +231,7 @@ public class Tasks : MonoBehaviour
                         fpsController.enabled = true;
                         playerCameraRoot.SetActive(true);
                         darkeningEffect.SetActive(false);
+                        runningSound.gameObject.SetActive(false);
                     }
 
                     else

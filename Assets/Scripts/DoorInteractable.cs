@@ -19,6 +19,7 @@ public class DoorInteractable : MonoBehaviour
     public bool isDoorOpening = false;
     bool isDoorMoving = false; 
     float smoothTime = 4f;
+    public bool isInside = false;
 
     Quaternion targetRotation;
 
@@ -97,11 +98,13 @@ public class DoorInteractable : MonoBehaviour
         if (other.gameObject.CompareTag("InsideTrigger") && !DoorOpen.activeSelf && !isDoorMoving)
         {
             cricketSounds.volume = 0.15f;
+            isInside = true;
         }
 
         else
         {
             cricketSounds.volume = 0.5f;
+            isInside = false;
         }
     }
 
