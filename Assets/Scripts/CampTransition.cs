@@ -33,8 +33,11 @@ public class CampTransition : MonoBehaviour
     // variables for leaving cabin to tower transition
     [SerializeField] Transform cabinToTowerPosition;
     [SerializeField] GameObject batteryDialogue;
+    [SerializeField] GameObject cannibalTrigger;
 
     [SerializeField] GameObject footSteps;
+    [SerializeField] GameObject cabinTransitionTrigger;
+    [SerializeField] GameObject cabinTransitionTrigger2;
 
     private bool transitionToCamp = false;
     private bool transitionToTower = false;
@@ -156,6 +159,9 @@ public class CampTransition : MonoBehaviour
             fpsController.enabled = true;
             playerCameraRoot.SetActive(true);
             darkeningEffect.SetActive(false);
+            cannibalTrigger.SetActive(true);
+            cabinTransitionTrigger.SetActive(false);
+            cabinTransitionTrigger2.SetActive(false);
         }
     }
 

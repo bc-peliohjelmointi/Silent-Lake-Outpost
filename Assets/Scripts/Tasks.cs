@@ -76,6 +76,7 @@ public class Tasks : MonoBehaviour
     public bool canPickUpBinocs = false;
     public bool hasSeenCamp = false;
     private bool hasSlept = false;
+    private bool isInside = false;
 
     // reference to other script for uses of their variables
     CampTransition campTransitionScript;
@@ -100,7 +101,7 @@ public class Tasks : MonoBehaviour
             TurnOnGenerator(maskGenerator, cam, generatorUI, generator);
         }
 
-        if (campTransitionScript.canSleep && !hasSlept && doorScript.isInside)
+        if (campTransitionScript.canSleep && !hasSlept && isInside)
         {
             Sleeping(maskBed, cam, goToSleepUI, bed);
         }
@@ -313,6 +314,19 @@ public class Tasks : MonoBehaviour
             paperPin.SetActive(true);
             arm.SetActive(true);
             Invoke("ArmJumpscareSound", 0.5f);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("InsideTrigger"))
+        {
+            isInside = true;
+        }
+
+        else
+        {
+            isInside = false;
         }
     }
 
