@@ -52,6 +52,7 @@ public class Tasks : MonoBehaviour
     // variables for the arm jumpscare after opening door
     [SerializeField] GameObject arm;
     [SerializeField] Transform armTransform;
+    [SerializeField] Transform enemy;
     [SerializeField] LayerMask armLayer;
     [SerializeField] AudioSource armJumpscare;
     private bool hasSeenArm = false;
@@ -67,8 +68,8 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject radioNotWorkingDialogue;
     [SerializeField] GameObject useRadioUI;
     [SerializeField] GameObject hikeToCabinUI;
+    [SerializeField] GameObject PlayerCamera;
     private bool canUseRadio = false;
-    private bool isLookingAtArm = false;
 
     Camera cam;
 
@@ -316,17 +317,12 @@ public class Tasks : MonoBehaviour
             paperPin.SetActive(true);
             arm.SetActive(true);
             Invoke("ArmJumpscareSound", 0.5f);
-            isLookingAtArm= true;
-            if(isLookingAtArm = true)
-            {
-                fpsController.enabled= false;
-                Vector3 rot = Quaternion.LookRotation(armTransform.position - transform.position).eulerAngles;
-                rot.x = rot.z = 0;
-                transform.rotation = Quaternion.Euler(rot);
-                await Task.Delay(500);
-                fpsController.enabled= true;
-
-            }
+            fpsController.enabled = false;
+            Vector3 rot = Quaternion.LookRotation(armTransform.position - transform.position).eulerAngles;
+            rot.x = rot.z = 0;
+            transform.rotation = Quaternion.Euler(rot);
+            await Task.Delay(1000);
+            fpsController.enabled = true;
         }
     }
 
@@ -340,6 +336,17 @@ public class Tasks : MonoBehaviour
         else
         {
             isInside = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            fpsController.enabled = false;
+            Vector3 rot = Quaternion.LookRotation(enemy.position - transform.position).eulerAngles;
+            rot.x = rot.z = 0;
+            transform.rotation = Quaternion.Euler(rot);
         }
     }
 

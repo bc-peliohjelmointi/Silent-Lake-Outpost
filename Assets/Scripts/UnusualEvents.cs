@@ -1,5 +1,7 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -21,6 +23,8 @@ public class UnusualEvents : MonoBehaviour
     // variables for dropping dead body jumpscare
     [SerializeField] GameObject deadbodyTrigger;
     [SerializeField] GameObject deadbody;
+    [SerializeField] GameObject CabinTrigger;
+    [SerializeField] Transform deadbodyTransform;
     [SerializeField] GameObject cabinBarrier;
     [SerializeField] AudioSource jumpscareSound;
 
@@ -71,14 +75,23 @@ public class UnusualEvents : MonoBehaviour
     {
         if (other.CompareTag("DeadbodyTrigger"))
         {
+            CabinTrigger.SetActive(false);
+            deadbodyTrigger.SetActive(false);
             cabinBarrier.SetActive(true);
             deadbody.SetActive(true);
             backToTowerDialogue.SetActive(false);
             Invoke("JumpscareSound", 0.8f);
+            Invoke("CameraLock", 0.5f);
             Invoke("DisableCabinBarrier", 3f);
         }
     }
 
+    private async void CameraLock()
+    {
+        Vector3 rot = Quaternion.LookRotation(deadbodyTransform.position - transform.position).eulerAngles;
+        rot.x = rot.z = 0;
+        transform.rotation = Quaternion.Euler(rot);
+    }
     private void TurnOffSpotMeatUI()
     {
         spottedMeatUI.SetActive(false);

@@ -54,6 +54,7 @@ public class EnemyController : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player died!");
+            agent.speed = 0f;
         }
     }
 }
