@@ -51,6 +51,7 @@ public class Tasks : MonoBehaviour
 
     // variables for the arm jumpscare after opening door
     [SerializeField] GameObject arm;
+    [SerializeField] Transform armTransform;
     [SerializeField] LayerMask armLayer;
     [SerializeField] AudioSource armJumpscare;
     private bool hasSeenArm = false;
@@ -67,6 +68,7 @@ public class Tasks : MonoBehaviour
     [SerializeField] GameObject useRadioUI;
     [SerializeField] GameObject hikeToCabinUI;
     private bool canUseRadio = false;
+    private bool isLookingAtArm = false;
 
     Camera cam;
 
@@ -306,7 +308,7 @@ public class Tasks : MonoBehaviour
     }
 
     // Jumpscare after waking up from sleep and opening the door
-    private void FallingHandJumpscare()
+    private async void FallingHandJumpscare()
     {
         if(doorScript.isDoorOpening)
         {
@@ -314,6 +316,17 @@ public class Tasks : MonoBehaviour
             paperPin.SetActive(true);
             arm.SetActive(true);
             Invoke("ArmJumpscareSound", 0.5f);
+            isLookingAtArm= true;
+            if(isLookingAtArm = true)
+            {
+                fpsController.enabled= false;
+                Vector3 rot = Quaternion.LookRotation(armTransform.position - transform.position).eulerAngles;
+                rot.x = rot.z = 0;
+                transform.rotation = Quaternion.Euler(rot);
+                await Task.Delay(500);
+                fpsController.enabled= true;
+
+            }
         }
     }
 
