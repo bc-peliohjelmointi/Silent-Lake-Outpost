@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Threading.Tasks;
 using StarterAssets;
 using System.Security.Cryptography;
+using UnityEngine.AI;
 
 /// <summary>
 /// This class is made by Leevi. It is usef for tasks that the player will have to do in order to advance in the story. Such as spotting the campfire for example.
@@ -10,6 +11,9 @@ using System.Security.Cryptography;
 /// </summary>
 public class Tasks : MonoBehaviour
 {
+
+    public NavMeshAgent agent;
+
     // variables for generator mission
     [SerializeField] GameObject generator;
     [SerializeField] GameObject selfDialogueUI;
