@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Threading.Tasks;
+
 
 //Script made by Anton. Made for enemy to chase player using NavMeshAgent AI. (Isn't used ingame yet)
 
@@ -9,7 +11,8 @@ public class EnemyController : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
-    public GameObject gameOverCanvas; 
+    public GameObject gameOverCanvas;
+    public GameObject UI;
     private Animator animator;
     public float attackRange = 2f;
 
@@ -60,13 +63,20 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void PlayerDied()
+    private async void PlayerDied()
     {
-        Debug.Log("Player died!");
+        UI.SetActive(false);
 
         if (gameOverCanvas != null)
         {
             gameOverCanvas.SetActive(true);
+
+            await Task.Delay(5000);
+
+            Cursor.lockState = CursorLockMode.None;
+
+            Cursor.visible = true;
+
         }
     }
 }
