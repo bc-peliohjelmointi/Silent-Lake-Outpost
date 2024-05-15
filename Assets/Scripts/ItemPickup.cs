@@ -24,6 +24,8 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] GameObject realFlashlight;
     [SerializeField] GameObject realBinocs;
     [SerializeField] Light binocLight;
+    [SerializeField] GameObject darkFlashUI;
+    [SerializeField] GameObject darkBinocsUI;
 
     [SerializeField] GameObject scoutingBarrier;
 
@@ -112,6 +114,7 @@ public class ItemPickup : MonoBehaviour
                         scoutingBarrier.SetActive(true);
                         binocInstructionUI.SetActive(true);
                         realBinocs.SetActive(true);
+                        darkBinocsUI.SetActive(true);
                         realFlashlight.SetActive(false);
                         flashlightInstructionUI.SetActive(false);
                         Invoke("TurnOffBinocInstructions", 8f);
@@ -122,6 +125,7 @@ public class ItemPickup : MonoBehaviour
                     {
                         flashlightInstructionUI.SetActive(true);
                         realFlashlight.SetActive(true);
+                        darkFlashUI.SetActive(true);
                         realBinocs.SetActive(false);
                         binocInstructionUI.SetActive(false);
                         Invoke("TurnOffFlashlightInstructions", 8f);
