@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
+    public GameObject gameOverCanvas; 
     private Animator animator;
     public float attackRange = 2f;
 
@@ -33,7 +34,6 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
-                
                 agent.SetDestination(transform.position);
             }
         }
@@ -49,11 +49,24 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player died!");
+            PlayerDied(); 
+        }
+    }
+
+    private void PlayerDied()
+    {
+        Debug.Log("Player died!");
+
+        if (gameOverCanvas != null)
+        {
+            gameOverCanvas.SetActive(true);
         }
     }
 }
