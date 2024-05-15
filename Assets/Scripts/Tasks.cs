@@ -82,6 +82,7 @@ public class Tasks : MonoBehaviour
     private bool isTurnedOn = false;
     public bool canPickUpBinocs = false;
     public bool hasSeenCamp = false;
+    public bool darkeningActive = false;
     private bool hasSlept = false;
     private bool isInside = false;
 
@@ -220,6 +221,8 @@ public class Tasks : MonoBehaviour
                 {
                     if (!doorScript.DoorOpen.activeSelf)
                     {
+                        darkeningActive = true;
+                        await Task.Delay(1);
                         scoutingBarrier.SetActive(true);
                         closeDoorText.SetActive(false);
                         hasSlept = true;
@@ -227,7 +230,7 @@ public class Tasks : MonoBehaviour
                         goToSleepUI.SetActive(false);
                         flashlight.SetActive(false);
                         darkeningEffect.SetActive(true);
-                        await Task.Delay(3000);
+                        await Task.Delay(2999);
                         windSound.enabled = false;
                         doorAudioSource.enabled = true;
                         await Task.Delay(2000);
@@ -240,6 +243,7 @@ public class Tasks : MonoBehaviour
                         playerCameraRoot.SetActive(true);
                         darkeningEffect.SetActive(false);
                         runningSound.gameObject.SetActive(false);
+                        darkeningActive = false;
                     }
 
                     else

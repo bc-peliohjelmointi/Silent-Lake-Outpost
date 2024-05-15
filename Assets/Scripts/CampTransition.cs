@@ -45,6 +45,7 @@ public class CampTransition : MonoBehaviour
     private bool fromCabinToTower = false;
 
     public bool canSleep = false;
+    public bool disableBinocs = false;
 
     private void Start()
     {
@@ -98,10 +99,12 @@ public class CampTransition : MonoBehaviour
     {
         if (other.CompareTag("ToCampTransition"))
         {
+            disableBinocs = true;
+            await Task.Delay(1);
             WrongPathTrigger.SetActive(false);
             transitionToCamp = true;
             darkeningEffect.SetActive(true);
-            await Task.Delay(3000);
+            await Task.Delay(2999);
             fpsController.enabled = false;
             await Task.Delay(4000);
             transitionToCamp = false;
@@ -111,15 +114,18 @@ public class CampTransition : MonoBehaviour
             turnOffFireUI.SetActive(true);
             Invoke("TurnOffUIPrompt", 10f);
             campTransitionTrigger.SetActive(false);
+            disableBinocs = false;
         }
 
         else if (other.CompareTag("ToTowerTransition"))
         {
+            disableBinocs = true;
+            await Task.Delay(1);
             canSleep = true;
             NoLeavingBarrier.SetActive(true);
             transitionToTower = true;
             darkeningEffect.SetActive(true);
-            await Task.Delay(3000);
+            await Task.Delay(2999);
             backToTowerUI.SetActive(false);
             fpsController.enabled = false;
             await Task.Delay(4000);
@@ -129,13 +135,16 @@ public class CampTransition : MonoBehaviour
             darkeningEffect.SetActive(false);
             Invoke("TurnOnSleepUI", 3f);
             Invoke("TurnOffSleepUI", 8f);
+            disableBinocs = false;
         }
 
         else if (other.CompareTag("ToCabinTransition"))
         {
+            disableBinocs = true;
+            await Task.Delay(1);
             transitionToCabin = true;
             darkeningEffect.SetActive(true);
-            await Task.Delay(3000);
+            await Task.Delay(2999);
             hikeToCabinDialogue.SetActive(false);
             fpsController.enabled = false;
             await Task.Delay(4000);
@@ -145,14 +154,17 @@ public class CampTransition : MonoBehaviour
             darkeningEffect.SetActive(false);
             Invoke("ArrivedAtCabin", 5f);
             Invoke("TurnOffArriveDialogue", 10f);
+            disableBinocs = false;
         }
 
         else if (other.CompareTag("FromCabinToTowerPosition"))
         {
+            disableBinocs = true;
+            await Task.Delay(1);
             batteryDialogue.SetActive(false);
             fromCabinToTower = true;
             darkeningEffect.SetActive(true);
-            await Task.Delay(3000);
+            await Task.Delay(2999);
             fpsController.enabled = false;
             await Task.Delay(4000);
             fromCabinToTower = false;
@@ -162,6 +174,7 @@ public class CampTransition : MonoBehaviour
             cannibalTrigger.SetActive(true);
             cabinTransitionTrigger.SetActive(false);
             cabinTransitionTrigger2.SetActive(false);
+            disableBinocs = false;
         }
     }
 

@@ -72,11 +72,11 @@ public class ItemPickup : MonoBehaviour
         PickupBatteries(batteryLayer, cam, batteryUI, battery1);
         PickupBatteries(batteryLayer, cam, batteryUI, battery2);
 
-        if(!battery1.activeSelf && !battery2.activeSelf)
+        if(!battery1.activeSelf && !battery2.activeSelf && !jumpscareReady)
         {
-            jumpscareReady = true;
             Invoke("BackToTowerDialogue", 1f);
             towerTransitionTrigger.SetActive(true);
+            jumpscareReady = true;
         }
     }
 

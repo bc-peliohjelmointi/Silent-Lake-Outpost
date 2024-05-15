@@ -22,6 +22,8 @@ public class PuttingOutFire : MonoBehaviour
     Camera cam;
 
     FirstPersonController fpsController;
+
+    public bool isPuttingOutFire = false;
     private void Start()
     {
         cam = Camera.main;
@@ -45,6 +47,7 @@ public class PuttingOutFire : MonoBehaviour
                 if (hit.collider.gameObject == item)
                 {
                     UI.SetActive(true);
+                    isPuttingOutFire = true;
                 }
             }
             else
@@ -56,20 +59,24 @@ public class PuttingOutFire : MonoBehaviour
             {
                 if (Physics.Raycast(ray, out hit, 2, mask))
                 {
-                    fpsController.enabled = false;
-                    transitionToTowerTrigger.SetActive(true);
-                    Darkening.SetActive(true);
-                    IsFireOn.SetActive(false);
-                    UI.SetActive(false);
-                    await Task.Delay(3000);
-                    Destroy(Fire);
-                    await Task.Delay(4000);
-                    fpsController.enabled = true;
-                    Darkening.SetActive(false);
-                    turnOffFireUI.SetActive(false);
-                    questionUI.SetActive(true);
-                    Invoke("TurnOffQuestionUI", 4f);
-                    Invoke("BackToTowerUI", 5f);
+                    if (hit.collider.gameObject == item)
+                    {
+                        fpsController.enabled = false;
+                        transitionToTowerTrigger.SetActive(true);
+                        Darkening.SetActive(true);
+                        IsFireOn.SetActive(false);
+                        UI.SetActive(false);
+                        await Task.Delay(3000);
+                        Destroy(Fire);
+                        await Task.Delay(4000);
+                        fpsController.enabled = true;
+                        Darkening.SetActive(false);
+                        turnOffFireUI.SetActive(false);
+                        questionUI.SetActive(true);
+                        Invoke("TurnOffQuestionUI", 4f);
+                        Invoke("BackToTowerUI", 5f);
+                        isPuttingOutFire = false;
+                    }
                 }
             }
         }

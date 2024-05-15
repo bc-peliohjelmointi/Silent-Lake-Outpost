@@ -27,11 +27,15 @@ public class Binoculars : MonoBehaviour
     [SerializeField] Texture2D binocImage;
     Tasks taskScript;
     Bringup pauseScript;
+    CampTransition transitionScript;
+    PuttingOutFire fireScript;
 
     private void Start()
     {
         taskScript = GetComponent<Tasks>();
         pauseScript = GetComponent<Bringup>();
+        transitionScript = GetComponent<CampTransition>();
+        fireScript = GetComponent<PuttingOutFire>();
     }
 
     /// <summary>
@@ -53,6 +57,11 @@ public class Binoculars : MonoBehaviour
         else
         {
             _virtualCamera.m_Lens.FieldOfView = Mathf.Lerp(_virtualCamera.m_Lens.FieldOfView, maxZoom, Time.deltaTime * sensitivity);
+        }
+
+        if(transitionScript.disableBinocs || taskScript.darkeningActive || fireScript.isPuttingOutFire)
+        {
+            isZoomed = false;
         }
     }
 
