@@ -14,6 +14,7 @@ public class UnusualEvents : MonoBehaviour
     [SerializeField] GameObject turnOffFireUI;
     [SerializeField] GameObject questioningUI;
     [SerializeField] GameObject backToTowerUI;
+    [SerializeField] GameObject seeingBodyUI;
 
     // variables for spotting meat in the camp area
     [SerializeField] GameObject spottedMeatUI;
@@ -27,6 +28,9 @@ public class UnusualEvents : MonoBehaviour
     [SerializeField] Transform deadbodyTransform;
     [SerializeField] GameObject cabinBarrier;
     [SerializeField] AudioSource jumpscareSound;
+    [SerializeField] AudioSource endBuildUp;
+
+
 
     [SerializeField] GameObject backToTowerDialogue;
 
@@ -98,13 +102,17 @@ public class UnusualEvents : MonoBehaviour
         hasSeenMeat = true;
     }
 
-    private void DisableCabinBarrier()
+    private async void DisableCabinBarrier()
     {
         cabinBarrier.SetActive(false);
+        seeingBodyUI.SetActive(true);
+        await Task.Delay(7000);
+        seeingBodyUI.SetActive(false);
     }
 
     private void JumpscareSound()
     {
         jumpscareSound.enabled = true;
+        endBuildUp.enabled = true;
     }
 }
